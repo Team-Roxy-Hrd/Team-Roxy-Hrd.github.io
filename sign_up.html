@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="css/sign_up.css">
+</head>
+
+<body>
+    <h1>Sign up</h1>
+    <div class="container">
+        <h2>Fill out the following:</h2>
+        <form method="post" target="_blank" id="form" onsubmit="return signup(event)">
+            <div>
+                <label for="username">Username :</label>
+                <input type="text" required name="username" autofocus id="username" class="username">
+            </div>
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" required name="email" id="email" class="email">
+            </div>
+            <div>
+                <label for="password">Password :</label>
+                <input type="password" required name="password" minlength="3" id="password" class="pass">
+            </div>
+            <div>
+                <label for="confirm">Confirm Password :</label>
+                <input type="password" required name="confirm_password" minlength="3" id="confirm" class="confirm"
+                    onkeyup="checkPassword()">
+            </div>
+            <div>
+                <p id="message" class="message">Passwords don't match</p>
+            </div>
+            <div>
+                <label for="phone">Phone Number :</label>
+                <input type="tel" id="phone" name="phone" class="phone">
+            </div>
+            <div>
+                <label for="date">Your Birth Day :</label>
+                <input type="date" id="date" name="birth_day" class="birth">
+            </div>
+            <div>
+                <label for="country">Country of Residence:</label>
+                <input list="countrylist" name="country" class="country" id="country">
+                <datalist id="countrylist">
+                    <option value="brazil"></option>
+                    <option value="canada"></option>
+                    <option value="china"></option>
+                    <option value="egypt"></option>
+                    <option value="france"></option>
+                    <option value="germany"></option>
+                    <option value="italy"></option>
+                    <option value="saudi arabia"></option>
+                    <option value="spain"></option>
+                    <option value="united arab emirated"></option>
+                    <option value="united states"></option>
+                    <option value="united kingdom "></option>
+                    <option value="other country"></option>
+                </datalist>
+            </div>
+            <div>
+                <label>Gender :</label>
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="male">Male</label>
+            </div>
+            <div>
+                <input class="female" type="radio" name="gender" value="female" id="female">
+                <label for="female">Female</label>
+            </div>
+            <div>
+                <label>Nationality :</label>
+                <input type="radio" name="nationality" value="egyptian" class="input" id="egyptian">
+                <label for="egyptian">Egyptian</label>
+            </div>
+            <div>
+                <input type="radio" name="nationality" value="foreign" class="foreign" id="foreign">
+                <label for="foreign">Foreign</label>
+            </div>
+            <div>
+                <label>Your Favorite Movie Genre :</label>
+                <input type="checkbox" name="favourite_movie_genre" value="anime" id="anime">
+                <label for="anime">Anime</label>
+                <div class="check">
+                    <div>
+                        <input type="checkbox" name="favourite_movie_genre" value="comedy" id="comedy">
+                        <label for="comedy">Comedy</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="favourite_movie_genre" value="drama" id="drama">
+                        <label for="drama">Drama</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="favourite_movie_genre" value="horror" id="horror">
+                        <label for="horror">Horror</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="favourite_movie_genre" value="arabic_show" id="arabic">
+                        <label for="arabic">Arabic Show</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="favourite_movie_genre" value="english_show" id="english">
+                        <label for="english">English Show</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <input type="reset" class="button">
+                <input type="submit" class="button">
+            </div>
+        </form>
+    </div>
+    <script>
+        function signup(event) {
+            event.preventDefault();
+            let password = document.getElementById("password").value;
+            let confirmPassword = document.getElementById("confirm").value;
+            if (password !== confirmPassword) {
+                document.getElementById("message").style.display = "block";
+                return false;
+            } else {
+                console.log('working');
+                var username = document.getElementById('username').value;
+                var email = document.getElementById('email').value;
+
+                var user = {
+                    email: email,
+                    username: username,
+                    password: password,
+                };
+
+                var json = JSON.stringify(user);
+                localStorage.setItem(username, json);
+                console.log('user added');
+                return true;
+            }
+        }
+
+        function checkPassword() {
+            let password = document.getElementById("password").value;
+            let confirmPassword = document.getElementById("confirm").value;
+            if (password === confirmPassword) {
+                document.getElementById("message").style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

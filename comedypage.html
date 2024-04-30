@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/CSS" href="css/comedystyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>
+        Comedy Films
+    </title>
+    <script src="script.js"></script>
+    <link href="./pictures/comedy films.png" rel="icon" style="color:white;">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link id="style" rel="stylesheet" href="comedystyle.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="head">
+        <main class="nav-bar">
+            <div class="nav-bar-left">
+                <a href="#" class="logo"><span>R</span>OXY <span>H</span>RD</a>
+            </div>
+            <div class="menu">
+                <button id="open" onclick="menu_op()"><i class="fa-solid fa-bars"></i></button>
+                <button id="close" onclick="menu_cl()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div id="menu" class="nav-bar-center">
+                <a href="">Home</a>
+                <select name="Movies" class="movies" >
+                    <option hidden>films</option>
+                    <option><a href="">horror</a></option>
+                    <option><a href="">drama</a></option>
+                    <option><a href="">action</a></option>
+                    <option><a href="">comedy</a></option>
+                </select>
+                <a href="" >Tv Shows</a>
+                <a href="anime.html" >Anime</a>
+                <a href="" >content with us</a>
+                <a href="" >About us?</a>
+            </div>
+            <div class="nav-bar-right">
+                <select id="replacer" onchange="changetheme()" class="th">
+                    <option value="theme1">Th-1</option>
+                    <option value="theme2">Th-2</option>
+                </select>
+                <button class="log-in"><a href="">log in</a></button>
+            </div>
+        </main>
+        <div style="display: none;" class="serch">
+            <div id="search_box">
+                <i class='bx bx-search-alt'></i>
+                <input type="text" class="search" id="searchInput" placeholder="search About Films......">
+                <div id="searchbox" class="selections">   
+                </div>
+            </div>
+            <button id="search_mark" onclick="search_box()" class="sh"><span class="material-symbols-outlined">search</span></button>
+        </div>
+        <div id="searchResults" class="search-results"></div>
+        <div style="display: none;" class="center">
+            <h2><span>R</span>OXY <span>H</span>RD</h2>
+            <h1>Unlimited Number <span>of Movies</span>, Tv shows, Cartoons <br> and more.....</h1>
+            <div class="para">
+                <P>90Fps</P>
+                <p>High Quaility</p>
+            </div>
+            <audio loop id="background-music">
+                <source src="background music.mpeg" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>          
+            <a href="#show"><button >Watch Now</button></a>
+        </div>
+    </header>
+    </div>
+    <div class="contianer">
+        <div>
+            <div class="search">
+                <form>
+                    <input type="text" placeholder="Search" name="search" id="input-box">
+                    
+                    <button type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="film-search" style="text-align:center;">
+            <a><ul style="list-style-type:none;" id="films-search"></a>
+            </ul>
+        </div>
+        <script>
+            const resultBox = document.querySelector(".film-search"); 
+            const inputBox =  document.getElementById("input-box");
+            inputBox.onkeyup = function (){
+                let result = [];
+                let input= inputBox.value;
+                if(input.length){
+                    result=availableKeywords.filter((keyword)=>{
+                    return keyword.toLowerCase().includes(input.toLowerCase());
+                });
+                console.log(result);
+                } 
+                display(result);
+                if(!result.length){
+                    resultBox.innerHTML='';
+                }
+            }
+        </script>
+    </div>    
+    <br>
+    <br>
+    <div class="name" style="line-height: 10px;padding:20px;">
+        <p>Name:Ramy Kamel Erian</p>
+        <span>Id:20230199</span>
+    </div>
+    <br>
+    <div class="header1">
+        <h2>Most Popular Films</h2>
+    </div>
+    <div class="popular">
+        <div class="first">
+            <a  class="link" target="_blank" onclick="okay(ghapy);"  id="ghapy">
+                <img src="./pictures/Ghapy.jpg" alt="Ghaby Mno Fih" class="film1">
+                <br>
+                <span class="name1">Ghaby Mno Fih</span>
+            </a>
+        </div>
+        <div class="second" >
+            <a  class="link" target="_blank" onclick="okay(elbadla);" id="elbadla">
+                <img src="./pictures/El Badla.jpg" alt="El Badla" class="film2">
+                <br>
+                <span class="name2">El Badla</span >
+            </a>
+        </div>
+        <div class="third" >
+            <a  class="link" target="_blank"onclick="okay(asal);"id="asal">
+                <img src="./pictures/Assal_Eswed_Poster.jpg" alt="Asal Eswd" class="film3">
+                <br>
+                <span class="name3">Asal Eswd</span>
+            </a>
+        </div>
+        <div class="fifth">
+            <a  class="link" target="_blank"onclick="okay(ahmed);" id="ahmed">
+                <img src="./pictures/Ahmed.jpg" class="film5" alt="Ahmed Notridam">
+                <br>
+                <span class="name5">Ahmed Notridam</span>
+            </a>
+        </div>
+        
+    </div>
+    <div class="header2">
+        <h2>English Comedy Films 2024</h2>
+    </div>
+    <div class="EnglishFilms2024">
+        <div class="first" id="ricky">
+            <a  class="link" target="_blank"onclick="okay(ricky);" id="ricky">
+                <img src="./pictures/Ricky_Stanicky_poster.jpg" alt="Ricky Stanicky" class="film1">
+                <br>
+                <span class="name1">Ricky Stanicky</span>
+            </a>
+        </div>
+        <div class="second" >
+            <a  class="link" target="_blank"onclick="okay(unfrosted);" id="unfrosted">
+                <img src="./pictures/Unfrosted_poster.jpg" alt="Unfrosted" class="film2">
+                <br>
+                <span class="name2">Unfrosted</span >
+            </a>
+        </div>
+        <div class="third" >
+            <a class="link"  target="_blank"onclick="okay(fallguy);"id="fallguy">
+                <img src="./pictures/The_Fall_Guy_(2024)_poster.jpg" alt="The Fall Guy" class="film3">
+                <br>
+                <span class="name3">The Fall Guy</span>
+            </a>
+        </div>
+        <div class="fourth" >
+            <a class="link" target="_blank" onclick="okay(Underdoggs);"id="Underdoggs">
+                <img src="./pictures/Underdoggs_poster.jpg" class="film4" alt="Underdoggs">
+                <br>
+                <span class="name4">Underdoggs</span>
+            </a>
+        </div>
+    </div>
+    <div class="header3">
+        <h2>Comedy Films 2023</h2>
+    </div>
+        <div class="Films2023" >
+            <div class="first" >
+                <a class="link" target="_blank" onclick="okay(operationfortune);"id="operationfortune">
+                    <img src="./pictures/Operation_Fortune.jpg" alt="Operation Fortune: Ruse de Guerre" class="film1">
+                    <br>
+                    <span class="name1">Operation Fortune: Ruse de Guerre</span>
+                </a>
+            </div>
+            <div class="second" >
+                <a class="link" target="_blank" onclick="okay(familyplan);"id="familyplan">
+                    <img src="./pictures/The-Family-Plan-Poster.webp" alt="The family Plan" class="film2" type="webp/.jpg">
+                    <br>
+                    <span class="name2">The family Plan</span >
+                </a>
+            </div>
+            <div class="third">
+                <a class="link" target="_blank" onclick="okay(robots);" id="robots">
+                    <img src="./pictures/Robots_2023_film.png" alt="Robots" class="film3">
+                    <br>
+                    <span class="name3">Robots</span>
+                </a>
+            </div>
+            <div class="fourth">
+                <a class="link" target="_blank" onclick="okay(chickenrun);" id="chickenrun">
+                    <img src="./pictures/Chicken_run_dawn_of_the_nugget.jpg" class="film4" alt="Chicken Run: Dawn of the Nugget">
+                    <br>
+                    <span class="name4">Chicken Run: Dawn of the Nugget</span>
+                </a>
+            </div>
+        </div>
+        <div class="header4">
+            <h2>Comedy Films 2022</h2>
+        </div>
+            <div class="Films2022">
+                <div class="first" >
+                    <a  class="link" target="_blank" onclick="okay(forzeko);"id="forzeko">
+                        <img src="./pictures/For Zeko.jpg" alt="For Zeko" class="film1">
+                        <br>
+                        <span class="name1">For Zeko</span>
+                    </a>
+                </div>
+                <div class="second" >
+                    <a class="link" target="_blank" onclick="okay(tasleemahaly);"id="tasleemahaly">
+                        <img src="./pictures/Tasleem Ahaly.jpg" alt="Tasleem Ahaly" class="film2" type="webp/.jpg">
+                        <br>
+                        <span class="name2">Tasleem Ahaly</span >
+                    </a>
+                </div>
+                <div class="third" >
+                    <a class="link" target="_blank"onclick="okay(fadelwneama);"id="fadelwneama">
+                        <img src="./pictures/its-an-unimportant-mission.jpg" alt="Fadel W Neama" class="film3">
+                        <br>
+                        <span class="name3">Fadel W Neama</span>
+                    </a>
+                </div>
+                <div class="fourth" >
+                    <a class="link" target="_blank"onclick="okay(elbaytbayty);"id="elbaytbayty">
+                        <img src="./pictures/El bayt bayty.jpg" class="film4" alt="El Bayt Bayty">
+                        <br>
+                        <span class="name4">El Bayt Bayty</span>
+                    </a>
+                </div>
+            </div>
+            <div class="header5">
+                <h2>Comedy Films 2021</h2>
+            </div>
+                <div class="Films2021">
+                    <div class="first" >
+                        <a class="link"  target="_blank"onclick="okay(mamahamel);"id="mamahamel">
+                            <img src="./pictures/Mama Hamel .jpg" alt="Shaw-Ming" class="film1">
+                            <br>
+                            <span class="name1">Mama Hamel</span>
+                        </a>
+                    </div>
+                    <div class="second" >
+                        <a class="link" target="_blank"onclick="okay(barraelmanhag);"id="barraelmanhag">
+                            <img src="./pictures/Barra El Manhag.jpg" alt="Barra El Manhag" class="film2" type="webp/.jpg">
+                            <br>
+                            <span class="name2">Barra El Manhag</span >
+                        </a>
+                    </div>
+                    <div class="third">
+                        <a class="link" target="_blank"onclick="okay(marrymeagain);" id="marrymeagain">
+                            <img src="./pictures/marry me again.jpg" alt="Marry Me Again" class="film3">
+                            <br>
+                            <span class="name3">Marry Me Again?</span>
+                        </a>
+                    </div>
+                    <div class="fourth" >
+                        <a class="link" target="_blank"onclick="okay(onesecond);"id="onesecond">
+                            <img src="./pictures/one second.jpg" class="film4" alt="One second">
+                            <br>
+                            <span class="name4">One second</span>
+                        </a>
+                    </div>
+                </div>
+        </div>
+    </div>
+        
+    </div>
+    <footer>
+        <div class="logo">
+            <a href="https://www.facebook.com/people/%C4%8E%C4%A9v%C4%83%C4%8F-%C4%98m%C3%A4%C4%8F/pfbid02smR9NxDPg15fyXKip2mDtdYhqfW9dx54qWMgMaAkUsc1CtwRcwZHJvscfRFTJkJhl/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.google-plus.com"><i class="fa-brands fa-google-plus"></i></a>
+            <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <p style="display: none;">&copy;copyRights, All rights reserved by <a style="display: none;" onclick="document.getElementById('team').style.display='inline-block'">Team Roxy HRD</a> </p>
+        <div class="copyright">
+            <p class="right"><span style="font-family: serif;">&copy;</span> all rights preserved for <span>R</span>oxy <span>H</span>RD</p> 
+            <p class="Thank">Thank you for choosing our site.</p>
+        </div>
+    </footer>
+</body>
+</html>

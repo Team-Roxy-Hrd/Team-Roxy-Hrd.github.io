@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link id="style" rel="stylesheet" href="css/anime.css">
+</head>
+<body>
+    <header class="head">
+        <main class="nav-bar">
+            <div class="nav-bar-left">
+                <a href="#" class="logo"><span>R</span>OXY <span>H</span>RD</a>
+            </div>
+            <div class="menu">
+                <button id="open" onclick="menu_op()"><i class="fa-solid fa-bars"></i></button>
+                <button id="close" onclick="menu_cl()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div id="menu" class="nav-bar-center">
+                <a href="">Home</a>
+                <select name="Movies" class="movies" >
+                    <option hidden>films</option>
+                    <option><a href="">horror</a></option>
+                    <option><a href="">drama</a></option>
+                    <option><a href="">action</a></option>
+                    <option><a href="">comedy</a></option>
+                </select>
+                <a href="" >Tv Shows</a>
+                <a href="anime.html" >Anime</a>
+                <a href="" >content with us</a>
+                <a href="" >About us?</a>
+            </div>
+            <div class="nav-bar-right">
+                <select id="replacer" onchange="changetheme()" class="th">
+                    <option value="theme1">Th-1</option>
+                    <option value="theme2">Th-2</option>
+                </select>
+                <button class="log-in"><a href="">log in</a></button>
+            </div>
+        </main>
+        <div class="serch">
+            <div id="search_box">
+                <i class='bx bx-search-alt'></i>
+                <input type="text" class="search" id="searchInput" placeholder="search About Films......">
+                <div id="searchbox" class="selections">   
+                </div>
+            </div>
+            <button id="search_mark" onclick="search_box()" class="sh"><span class="material-symbols-outlined">search</span></button>
+        </div>
+        <div id="searchResults" class="search-results"></div>
+        <div style="display: none;" class="center">
+            <h2><span>R</span>OXY <span>H</span>RD</h2>
+            <h1>Unlimited Number <span>of Movies</span>, Tv shows, Cartoons <br> and more.....</h1>
+            <div class="para">
+                <P>90Fps</P>
+                <p>High Quaility</p>
+            </div>
+            <audio loop id="background-music">
+                <source src="background music.mpeg" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>          
+            <a href="#show"><button >Watch Now</button></a>
+        </div>
+        <audio hidden controls>
+            <source src="The Kid LAROI_ Justin Bieber - STAY (Official Video)(MP3_160K).mp3" type="audio/mp3">
+        </audio>
+    </header>
+    <div class="show">
+        <div class="content">
+            <h1><span>R</span>oxy <span>H</span>RD</h1>
+            <p>this site contain at best anime around world of comedy, drama, action, horror and advantures, by several qualitys, and 
+                small discription about each anime
+            </p>
+            <h3>welcome in anime world, I wish you happy watching.</h3>
+            <button id="watch">Watch Now</button><br>
+        </div>
+    </div>
+    <div class="contianer">
+        <div class="section">
+            <div class="advertisements">
+                <iframe src="pictures/300x250.gif"></iframe>
+            </div>
+            <div class="popular">
+                <div class="head_show">
+                    <h1><i class='bx bxs-video-recording'></i><span>R</span>oxy <span>H</span>RD</h1></h1>
+                    <h2>The Best Animes</h2> 
+                </div>
+                <div class="row1">
+                    <button id="D_left1" onclick="swapfilm1_rev()" style="display: none;"><i class="bx bx-chevrons-left"></i></button>
+                    <div class="anime">
+                        <div id="row1" class="anime1">
+                            <a href="show 1.html"><img src="pictures/black clover.jpg"></a>
+                            <p>Black Clover</p>
+                        </div>
+                        <div id="row1" class="anime2">
+                            <a href="show 1.html"><img src="pictures/wind breaker.jpg"></a>
+                            <p>Wind Breaker</p>
+                        </div>
+                        <div id="row1" class="anime3">
+                            <a href="show 1.html"><img src="pictures/demoin slayer.jpg"></a>
+                            <p>Demoin Slayer</p>
+                        </div>
+                        <div id="row1" class="anime4">
+                            <a href="show 1.html"><img src="pictures/yogi oh.jpg"></a>
+                            <p>Yogi Oh</p>
+                        </div>
+                        <div id="row1" class="anime5">
+                            <a href="show 1.html"><img src="pictures/jujutsu kaisan.jpg"></a>
+                            <p>Jujutsu Kaisan</p>
+                        </div>
+                    </div>
+                    <button id="D_right1" onclick="swapfilm1()"><i class="bx bx-chevrons-right"></i></button>
+                </div>
+                <div class="row2">
+                    <button id="D_left2" onclick="swapfilm2_rev()" style="display: none;"><i class="bx bx-chevrons-left"></i></button>
+                    <div class="anime">
+                        <div id="row2" class="anime1">
+                            <a href="show 1.html"><img src="pictures/solo leveling.jpg"></a>
+                            <p>Solo Leveling</p>       
+                        </div>
+                        <div id="row2" class="anime2">
+                            <a href="show 1.html"><img src="pictures/yogi zexal.jpg"></a>
+                            <p>Yogi Zexal</p>
+                        </div>
+                        <div id="row2" class="anime3">
+                            <a href="show 1.html"><img src="pictures/death note.jpg"></a>
+                            <p>Death Note</p>
+                        </div>
+                        <div id="row2" class="anime4">
+                            <a href="show 1.html"><img src="pictures/one piece.jpg"></a>
+                            <p>One Piece</p>
+                        </div>
+                        <div id="row2" class="anime5">
+                            <a href="show 1.html"><img src="pictures/fate zero.jpg"></a>
+                            <p>Fate Zero</p>
+                        </div>
+                    </div>
+                    <button id="D_right2" onclick="swapfilm2()"><i class="bx bx-chevrons-right"></i></button>
+                </div>
+            </div>
+            <div id="discription" class="discription">
+                <div class="anime">
+                    <a href="show 1.html"><img src="pictures/wind breaker.jpg"></a>
+                    <div class="tools">
+                        <a href="show 1.html" class="new">Watch Now</a><br>
+                        <div class="innerdiscription">
+                            the new ring is the best rings, watch now wind breaker that take about street fight to help people
+                            that had been rabbit or had been hit, by the best quality in world and without advertisements
+                        </div>
+                    </div>
+                </div>
+                <div class="anime">
+                    <a href="show 1.html"><img src="pictures/one piece.jpg"></a>
+                    <div class="tools">
+                        <a href="show 1.html" class="new">Watch Now</a><br>
+                        <div class="innerdiscription">
+                            the new ring is the best rings, watch now one piece that take about little boy is called luffy
+                            and he want to be the king of pirates with the best converting that is called ghear , by
+                             the best quality in world and without advertisements
+                        </div>
+                    </div>
+                </div>
+                <div class="anime">
+                    <a href="show 1.html"><img src="pictures/solo leveling.jpg"></a>
+                    <div class="tools">
+                        <a href="show 1.html" class="new">Watch Now</a><br>
+                        <div class="innerdiscription">
+                            the new ring is the best rings, watch now solo leveling that take about little boy
+                            was very close to death but bounce return to hospital and discover that you start in fighting game, by
+                            the best quality in world and without advertisements
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recent">
+                <div class="head_show">
+                    <h1><i class='bx bxs-video-recording'></i><span>R</span>oxy <span>H</span>RD</h1></h1>
+                    <h2>Nanatsu No Taizai Series</h2> 
+                </div>
+                <div class="content">
+                    <button id="D_left3" onclick="swapfilm3_rev()" style="display: none;"><i class="bx bx-chevrons-left"></i></button>
+                    <div class="anime">
+                        <div id="content" class="anime1">
+                            <a href="show 1.html"><img src="pictures/nanatsu no taizai session 1.jpg"></a>
+                            <p>Nanatsu No Taizai Session 1</p>
+                        </div>
+                        <div id="content" class="anime2">
+                            <a href="show 1.html"><img src="pictures/nanatsu no taizai session 2.jpg"></a>
+                            <p>Nanatsu No Taizai Session 2</p>
+                        </div>
+                        <div id="content" class="anime3">
+                            <a href="show 1.html"><img src="pictures/nanatsu no taizai session 3.jpg"></a>
+                            <p>Nanatsu No Taizai Session 3</p>
+                        </div>
+                        <div id="content" class="anime4">
+                            <a href="show 1.html"><img src="pictures/nanatsu no taizai session 4.jpg"></a>
+                            <p>Nanatsu No Taizai Session 4</p>
+                        </div>
+                        <div id="content" class="anime5">
+                            <a href="show 1.html"><img src="pictures/nanatsu no taizai session 5.jpg"></a>
+                            <p>Nanatsu No Taizai Session 5</p>
+                        </div>
+                    </div>
+                    <button id="D_right3" onclick="swapfilm3()"><i class="bx bx-chevrons-right"></i></button>
+                </div>
+            </div>
+            <div class="recent1">
+                <div class="head_show">
+                    <h1><i class='bx bxs-video-recording'></i><span>R</span>oxy <span>H</span>RD</h1></h1>
+                    <h2>Nanatsu No Taizai Series</h2> 
+                </div>
+                <div class="content">
+                    <button id="D_left3_768" onclick="swap3films_rev()" style="display: none;"><i class="bx bx-chevrons-left"></i></button>
+                    <div class="anime">
+                        <div id="content1" class="anime1">
+                            <a href="show 1.html"><img src="pictures/nanatsu no taizai session 1.jpg"></a>
+                            <p>Nanatsu No Taizai Session 1</p>
+                        </div>
+                        <div id="content1" class="anime2">
+                            <a href="show 1.html"><img src="pictures/nanatsu no taizai session 2.jpg"></a>
+                            <p>Nanatsu No Taizai Session 2</p>
+                        </div>
+                        <div id="content1" class="anime3">
+                            <a href="show 1.html"><img src="pictures/nanatsu no taizai session 3.jpg"></a>
+                            <p>Nanatsu No Taizai Session 3</p>
+                        </div>
+                        <div id="content1" class="anime4">
+                            <a href="show 1.html"><img src="pictures/nanatsu no taizai session 4.jpg"></a>
+                            <p>Nanatsu No Taizai Session 4</p>
+                        </div>
+                        <div id="content1" class="anime5">
+                            <a href="show 1.html"><img src="pictures/nanatsu no taizai session 5.jpg"></a>
+                            <p>Nanatsu No Taizai Session 5</p>
+                        </div>
+                    </div>
+                    <button id="D_right3_768" onclick="swap3films()"><i class="bx bx-chevrons-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="evaluation" class="evaluation">
+        <h1>Your evaluation is important to us</h1>
+        <button onclick="hide()" class="exit"><i class="fa-solid fa-xmark"></i></button>
+        <img src="pictures/teamwork-and-team-building.png">
+        <div id="stars">
+            <button onclick="star1()"><i id="star1" class="bx bx-star"></i></button>
+            <i id="Full1" class="bx bxs-star"></i>
+            <button onclick="star2()"><i id="star2" class="bx bx-star"></i></button>
+            <i id="Full2" class="bx bxs-star"></i>
+            <button onclick="star3()"><i id="star3" class="bx bx-star"></i></button>
+            <i id="Full3" class="bx bxs-star"></i>
+            <button onclick="star4()"><i id="star4" class="bx bx-star"></i></button>
+            <i id="Full4" class="bx bxs-star"></i>
+            <button onclick="star5()"><i id="star5" class="bx bx-star"></i></button>
+            <i id="Full5" class="bx bxs-star"></i>
+        </div>
+        <h3 id="message">Thank you for evaluate our website</h3>
+    </div>
+    <footer>
+        <div class="logo">
+            <a href="https://www.facebook.com/people/%C4%8E%C4%A9v%C4%83%C4%8F-%C4%98m%C3%A4%C4%8F/pfbid02smR9NxDPg15fyXKip2mDtdYhqfW9dx54qWMgMaAkUsc1CtwRcwZHJvscfRFTJkJhl/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.google-plus.com"><i class="fa-brands fa-google-plus"></i></a>
+            <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <p style="display: none;">&copy;copyRights, All rights reserved by <a style="display: none;" onclick="document.getElementById('team').style.display='inline-block'">Team Roxy HRD</a> </p>
+        <div class="copyright">
+            <p class="right"><span style="font-family: serif;">&copy;</span> all rights preserved for <span>R</span>oxy <span>H</span>RD</p> 
+            <p class="Thank">Thank you for choosing our site.</p>
+        </div>
+    </footer>
+   
+    <script>
+        document.addEventListener("DOMContentLoaded" , function(){
+        const watch = document.getElementById("watch");
+        watch.addEventListener("click", function(){
+            const section = document.getElementById("discription");
+            if (section){
+                const sectionTop = section.offsetTop;
+                window.scrollTo({
+                    top: sectionTop,
+                    behavior: "smooth"
+                });
+            }
+        });
+        });
+
+        function menu_op(){
+            document.getElementById('menu').style.display = 'flex'
+            document.getElementById('open').style.display = 'none'
+            document.getElementById('close').style.display = 'inline'
+        };
+        function menu_cl(){
+            document.getElementById('menu').style.display = 'none'
+            document.getElementById('open').style.display = 'inline'
+            document.getElementById('close').style.display = 'none'
+        };
+
+        function search_box(){
+            document.getElementById('search_box').style.display = 'block'
+            document.getElementById('search_mark').style.display = 'none'
+        }
+
+        let result_list = [
+            'Black Clover',
+            'Wind Breaker',
+            'Demoin Slayer',
+            'Yogi Oh',
+            'Jujutsu Kaisan',
+            'Solo Leveling',
+            'Yogi Zexal',
+            'where',
+            'when',
+            'which',
+            'what',
+        ];
+        const result_box = document.querySelector('.selections');
+        const input_key = document.getElementById('searchInput');
+
+        input_key.onkeyup = function(){
+            let result = [];
+            let input = input_key.value;
+            if (input.length){
+                result = result_list.filter((keyword) => {
+                    return keyword.toLowerCase().includes(input.toLowerCase());
+                });
+                console.log(result);
+            }
+            display(result);
+
+            if (!result.length){
+                result_box.innerHTML = '';
+            }
+        }
+        function display(result){
+            const content = result.map((list)=>{
+                return '<a href="show 1.html">' + "<li>" + list + "</li>" + "</a>";
+            });
+            result_box.innerHTML = "<ul>" + content.join('') + "</ul>"; 
+        }
+
+        let filmindex1 = 1;
+        function swapfilm1(){
+            const films = document.querySelectorAll('#row1');
+            filmindex1 = (filmindex1 + 1) % films.length;
+            
+            for(var i = 0; i < films.length; i++)
+            {
+                if (i !== filmindex1 && i !== (filmindex1 +1) % films.length)
+                { films[i].style.display = 'none';}
+                else
+                {films[i].style.display = 'inline-block';}
+            }
+            if (filmindex1 === 2)
+            {
+                document.getElementById('D_left1').style.display = "inline";
+            }
+            if (filmindex1 === (films.length -1))
+            {
+                document.getElementById('D_right1').style.display = "none";
+            }
+        }
+        function swapfilm1_rev(){
+            const films_rev = document.querySelectorAll('#row1');
+            filmindex1 = (filmindex1 - 1) % films_rev.length;  
+
+            for(var i = 0; i < films_rev.length; i++)
+            {
+                if (i !== filmindex1 && i !== (filmindex1 + 1) % films_rev.length )
+                { films_rev[i].style.display = 'none';}
+                else
+                {films_rev[i].style.display = 'inline-block';}
+            }
+            if (filmindex1 === 3)
+            {
+                document.getElementById('D_right1').style.display = "inline";
+            }
+            if (filmindex1 === 1)
+            {
+                document.getElementById('D_left1').style.display = "none";
+            }
+        }
+
+        let filmindex2 = 1;
+        function swapfilm2(){
+            const films2 = document.querySelectorAll('#row2');
+            filmindex2 = (filmindex2 + 1) % films2.length;
+            
+            for(var i = 0; i < films2.length; i++)
+            {
+                if (i !== filmindex2 && i !== (filmindex2 +1) % films2.length)
+                { films2[i].style.display = 'none';}
+                else
+                {films2[i].style.display = 'inline-block';}
+            }
+            if (filmindex2 === 2)
+            {
+                document.getElementById('D_left2').style.display = "inline";
+            }
+            if (filmindex2 === (films2.length -1))
+            {
+                document.getElementById('D_right2').style.display = "none";
+            }
+        }
+        function swapfilm2_rev(){
+            const films2_rev = document.querySelectorAll('#row2');
+            filmindex2 = (filmindex2 - 1) % films2_rev.length;  
+
+            for(var i = 0; i < films2_rev.length; i++)
+            {
+                if (i !== filmindex2 && i !== (filmindex2 + 1) % films2_rev.length )
+                { films2_rev[i].style.display = 'none';}
+                else
+                {films2_rev[i].style.display = 'inline-block';}
+            }
+            if (filmindex2 === 3)
+            {
+                document.getElementById('D_right2').style.display = "inline";
+            }
+            if (filmindex2 === 1)
+            {
+                document.getElementById('D_left2').style.display = "none";
+            }
+        }
+
+        let filmindex3 = 1;
+        function swapfilm3(){
+            const films3 = document.querySelectorAll('#content');
+            filmindex3 = (filmindex3 + 1) % films3.length;
+            
+            for(var i = 0; i < films3.length; i++)
+            {
+                if (i !== filmindex3 && i !== (filmindex3 +1) % films3.length)
+                { films3[i].style.display = 'none';}
+                else
+                {films3[i].style.display = 'inline-block';}
+            }
+            if (filmindex3 === 2)
+            {
+                document.getElementById('D_left3').style.display = "inline";
+            }
+            if (filmindex3 === (films3.length -1))
+            {
+                document.getElementById('D_right3').style.display = "none";
+            }
+        }
+        function swapfilm3_rev(){
+            const films3_rev = document.querySelectorAll('#content');
+            filmindex3 = (filmindex3 - 1) % films3_rev.length;  
+
+            for(var i = 0; i < films3_rev.length; i++)
+            {
+                if (i !== filmindex3 && i !== (filmindex3 + 1) % films3_rev.length )
+                { films3_rev[i].style.display = 'none';}
+                else
+                {films3_rev[i].style.display = 'inline-block';}
+            }
+            if (filmindex3 === 3)
+            {
+                document.getElementById('D_right3').style.display = "inline";
+            }
+            if (filmindex3 === 1)
+            {
+                document.getElementById('D_left3').style.display = "none";
+            }
+        }
+
+        let filmindex4 = 1;
+        function swap3films(){
+            const films4 = document.querySelectorAll('#content1');
+            
+            filmindex4 = (filmindex4 + 1) % films4.length;
+            
+            for(var i = 0; i < films4.length; i++)
+            {
+                if (i !== filmindex4 && i !== (filmindex4 +1) % films4.length && i !== (filmindex4 +2) % films4.length)
+                { films4[i].style.display = 'none';}
+                else
+                {films4[i].style.display = 'inline-block';}
+            }
+            if (filmindex4 === 2)
+            {
+                document.getElementById('D_left3_768').style.display = "inline";
+            }
+            if (filmindex4 === (films4.length -2))
+            {
+                document.getElementById('D_right3_768').style.display = "none";
+            }
+        }
+        function swap3films_rev(){
+            const films4_rev = document.querySelectorAll('#content1');
+            filmindex4 = (filmindex4 - 1) % films4_rev.length;
+
+            for(var i = 0; i < films4_rev.length; i++)
+            {
+                if (i !== filmindex4 && i !== (filmindex4 + 1) % films4_rev.length && i !== (filmindex4 +2) % films4_rev.length)
+                { films4_rev[i].style.display = 'none';}
+                else
+                {films4_rev[i].style.display = 'inline-block';}
+            }
+            if (filmindex4 === 2)
+            {
+                document.getElementById('D_right3_768').style.display = "inline";
+            }
+            if (filmindex4 === 1)
+            {
+                document.getElementById('D_left3_768').style.display = "none";
+            }
+        }
+         
+        function changetheme(){
+            const replacer = document.getElementById('replacer').value;
+            const style = document.getElementById('style');
+            if (replacer === 'theme2'){
+                style.href = '';
+            }
+            else{
+                style.href = 'HomeThem.css';
+            }
+        }
+
+        function star1(){
+           document.getElementById('Full1').style.display = "inline";
+           document.getElementById('star1').style.display = "none";
+           document.getElementById('message').style.display = "inline";
+        }
+        function star2(){
+           document.getElementById('Full1').style.display = "inline";
+           document.getElementById('star1').style.display = "none";
+           document.getElementById('Full2').style.display = "inline";
+           document.getElementById('star2').style.display = "none";
+           document.getElementById('message').style.display = "block";
+        }
+        function star3(){
+           document.getElementById('Full1').style.display = "inline";
+           document.getElementById('star1').style.display = "none";
+           document.getElementById('Full2').style.display = "inline";
+           document.getElementById('star2').style.display = "none";
+           document.getElementById('Full3').style.display = "inline";
+           document.getElementById('star3').style.display = "none";
+           document.getElementById('message').style.display = "block";
+        }
+        function star4(){
+           document.getElementById('Full1').style.display = "inline";
+           document.getElementById('star1').style.display = "none";
+           document.getElementById('Full2').style.display = "inline";
+           document.getElementById('star2').style.display = "none";
+           document.getElementById('Full3').style.display = "inline";
+           document.getElementById('star3').style.display = "none";
+           document.getElementById('Full4').style.display = "inline";
+           document.getElementById('star4').style.display = "none";
+           document.getElementById('message').style.display = "block";
+        }
+        function star5(){
+           document.getElementById('Full1').style.display = "inline";
+           document.getElementById('star1').style.display = "none";
+           document.getElementById('Full2').style.display = "inline";
+           document.getElementById('star2').style.display = "none";
+           document.getElementById('Full3').style.display = "inline";
+           document.getElementById('star3').style.display = "none";
+           document.getElementById('Full4').style.display = "inline";
+           document.getElementById('star4').style.display = "none";
+           document.getElementById('Full5').style.display = "inline";
+           document.getElementById('star5').style.display = "none";
+           document.getElementById('message').style.display = "block";
+        }
+
+        function hide(){
+            document.getElementById('evaluation').style.top = "-100px";
+            document.getElementById('evaluation').style.transform = "scale(0)";
+            document.getElementById('hidden').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
