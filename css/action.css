@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0; 
+     box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+body {
+    color: white;
+    background-image: url(images/اكشن.jpg);
+    background-attachment: fixed;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: 0% 6%;
+    border-radius: 20px;
+}
+
+.row {
+    padding: 25px;
+}
+
+.row div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.albums img {
+    width: 165px;
+    height: 175px;
+    border-radius: 8px;
+    margin-bottom: 7px;
+}
+
+span {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+.albums div:hover {
+    background-color: #45b7c5c7;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    scale: 1.1;
+}
+
+.albums div {
+    margin-top: 7px;
+    border-radius: 8px;
+    padding: 17px;
+    /* background-color: #1a626bc7; */
+    background-color: #225258c7;
+}
+
+.albums div p {
+    margin-top: 4px;
+    color: black;
+}
+
+.content {
+    border-color: rgb(61 144 182 / 64%);
+    border-style: solid;
+    border-radius: 20px;
+    background-color: rgb(24 23 23 / 64%);
+}
+
+header {
+    background-color: #225258c7;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: auto;
+    width: 700px;
+    position: sticky;
+    top: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.search {
+    margin: auto;
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    border-color: #bd546bc7;
+    border: 3px solid #bd546bc7;
+    position: sticky;
+    top: 56px;
+    margin-left: 600px;
+    text-align: center;
+}
+
+/* 
+.movies {
+    text-align: center;
+}
+
+.movie {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 350px;
+    background-color: #333;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+}
+
+.movie img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+}
+
+.movie-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 14px;
+}
+
+.movie-title {
+    margin-bottom: 5px;
+}
+
+.book-now {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.book-now:hover {
+    background-color: #013778;
+} */
+
+/* .fullbody .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    margin-right: auto;
+} */
+/* 
+.menu{
+    padding: 100px;
+} */
+
+html {
+    /* scroll-behavior: smooth; */
+}
+
+/* .buttoms .b1 {
+    background: rgb(212, 136, 136);
+    width: 120px;
+    height: 30px;
+    border-style: solid;
+    border-radius: 15px;
+    margin: 20px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+} */
+
+/* .menu {
+    display: inline-block;
+    
+} */
+/* .container2 {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    border-radius: 8px;
+} */
+/* .b2 {
+    background-color: white;
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+} */
+/* button:hover {
+    background: white ;
+    transition: all .5s ease-in-out;
+ color:aqua;
+ scale: 1.1;
+} */
