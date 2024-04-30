@@ -1,0 +1,90 @@
+.container {
+    background-color: rgba(255, 255, 255, 0.603);
+    padding: 20px 50px;
+    margin: auto;
+    border-color: rgba(255, 255, 255, 0.829);
+    border-radius: 2%;
+    border-style: solid;
+    width: 550px;
+    height: 1000px;
+    font-style: italic;
+    font-size: larger;
+}
+
+input {
+    border-radius: 5px;
+    border-color: rgb(46, 159, 203);
+    margin: 10px;
+}
+
+label {
+    color: rgb(69, 26, 59)
+}
+
+h1 {
+    text-align: center;
+    color: rgba(63, 15, 51, 0.795);
+}
+
+.female {
+    margin-left: 83px;
+}
+
+.foreign {
+    margin-left: 113px;
+}
+
+body {
+    background-image: url(../pictures/HD-wallpaper-film-reel-film-projector.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.check {
+    margin-left: 218px;
+}
+
+.country,
+.username,
+.last,
+.email,
+.pass,
+.confirm,
+.phone,
+.birth {
+    width: 175px;
+    display: flex;
+    margin: 0px 200px 0px 200px;
+    position: relative;
+    top: -20px;
+
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    margin-left: 100px;
+    margin-top: 30px;
+    font-size: 17px;
+}
+
+div {
+    margin: 10px;
+}
+
+.button:hover,
+input:hover {
+    transition: .5s;
+    background-color: aqua;
+}
+
+.message {
+    display: none;
+    background-color: #d52e6d;
+    color: #eae9f0;
+    width: 300px;
+    border-radius: 3px;
+    text-align: center;
+    margin: auto;
+}

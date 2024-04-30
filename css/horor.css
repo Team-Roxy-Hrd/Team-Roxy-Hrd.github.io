@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+h2{
+    margin-top: 100px;
+    margin-left: 130px;
+    font-size: xxx-large;
+    font-weight: 900;
+    color:rgb(23, 192, 34);
+}
+h6{
+    font-size: -webkit-xxx-large;
+    margin-top: 20px;
+    margin-left: 120px;
+    color: #a30101;
+}
+h5{
+    margin-top: 100px;
+    margin-left: 0px;
+    font-size: xxx-large;
+    font-weight: 900;
+    color: #a30101;
+}
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; 
+    /* margin: 0 auto; */
+    color: #4dbf00;
+    margin-top:100px ;
+    /* margin-left: -300px; */
+    
+}
+.search {
+    padding: 10px;
+    border-radius: 24px;
+    font-size: 16px;
+    text-align: center;
+    width: 80%;
+    color: #04ff04;
+    margin-left: -350px;
+    background-color: #a30101;
+    outline: none;
+    border: none;
+}
+.search-results {
+    position: absolute;
+    top: calc(100% + 10px); 
+    left: 0;
+    width: 80%;
+    background-color: rgb(200,200,200,0.5);
+    border-radius: 8px;
+    z-index: 1;
+    max-height: 200px; 
+    overflow-y: auto;
+    display: none; 
+}
+.search-result {
+    padding: 10px;
+    border-bottom: 1px solid #dfe1e5;
+    cursor: pointer;
+}
+.search-result:last-child {
+    border-bottom: none;
+}
+.search-result:hover {
+    background-color: #320d0d; 
+}
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+    font-family: 'sen', sans-serif;
+
+}
+.logo-container{
+    flex:1;
+    color: #4dbf00;
+}
+.logo{
+    font-size: 30px;
+    color: #4dbf00;
+}
+.menu-container{
+    flex:6;  
+}
+.menu-list{
+    display: flex;
+    list-style: none;
+}
+.menu-list-item{
+    margin-right: 30px;
+}
+.menu-list-item.active{
+    font-weight: bold;
+}
+.container{
+    background-color: #151515;
+    min-height:calc(100vh - 50px);
+    color:white;
+}
+.content-container{
+    margin-left: 50px;
+}
+.featured-content{
+    height: 50vh;
+    padding: 50px;
+}
+.featured-title{
+    width: 200px;
+}
+.featured-desc{
+    width: 500px;
+    color: lightgray;
+    margin: 30px 0;
+}
+.movie-list-container{
+    padding: 0 20px;
+}
+.movie-list-wrapper{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+.movie-list{
+    display: flex;
+    align-items: center;
+    height: 300px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+}
+.movie-list-item{
+    margin-right:30px ;
+    position: relative;  
+}
+.movie-list-item:hover .movie-list-item-img{
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+}
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button{
+    opacity: 1;
+}
+.movie-list-item-img{
+    transition: all 1s ease-in-out;
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.movie-list-item-title{
+    background-color: #333;
+    padding: 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+.movie-list-item-desc{
+    background-color: #333;
+    padding:10px;
+    font-size: 14px;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    width: 200px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+.second title{
+    margin: 2000px;
+}
+.movie-list-item-button{
+    padding: 10px;
+    background-color: #4dbf00;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+.container.active{
+    background-color: white;
+}
+.movie-list-title.active{
+    color:black
+
+}
+.navbar-container.active{
+    background-color: white;
+    color: black;
+}
+.sidebar.active{
+    background-color: white;
+
+}
+.left-menu-icon.active{
+    color: black;
+}
+.toggle.active{
+    background-color: black;
+}
+.toggle-ball.active{
+    background-color: white;
+    transform: translateX(-20px);
+}
+@media only screen and (max-width: 940px) {
+    .menu-container{
+        display: none;   
+    }
+
+}

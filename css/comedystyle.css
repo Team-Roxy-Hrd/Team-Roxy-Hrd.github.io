@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body {
+    background-image:url("./pictures/backgroundwebp.webp");
+    background-size: cover;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:600;
+    font-size:large;
+    color:white;
+    overflow-x:hidden;
+    background-attachment:fixed;
+}
+a{
+    text-decoration: none;
+}
+span{
+    color: rgb(109, 205, 109);
+}
+button{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+.nav-bar{
+    height: 40px;
+    background-color: black;
+    border-bottom: 3px solid white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+}
+.logo{
+    font-size: xx-large;
+    position: absolute;
+    left: 45%;
+}
+.nav-bar-center{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 250px;
+    height: 330px;
+    gap: 20px;
+    padding: 20px;
+    position: absolute;
+    top: 60px;
+    left: 3rem;
+    animation: menu .2s 1;
+    display: none;
+}
+@keyframes menu{
+    0%{
+        height: 66px;
+        overflow: hidden;
+    }
+    25%{
+        height: 132px;
+        overflow: hidden;
+    }
+    50%{
+        height: 198px;
+        overflow: hidden;
+    }
+    75%{
+        height: 264px;
+        overflow: hidden;
+    }
+    100%{
+        height: 330px;
+        overflow: hidden;
+    }
+}
+.nav-bar-center a{
+    border-radius: 20px;
+    width: 90%;
+    height: 40px;
+    padding: 5px 5%;
+    text-align: center;
+    font-size: large;
+}
+.nav-bar-center select , .nav-bar-center option{
+    height: 60px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    font-size: large;
+    outline: none;
+}
+.nav-bar-center a:hover{ 
+    background-color: rgb(109, 205, 109);
+    scale: 1.05;
+    font-size: x-large;
+}
+.nav-bar-center select:hover{
+    background-color: rgb(109, 205, 109);
+    scale: 1.05;
+    font-size: x-large;
+}
+.menu i{
+    font-size: x-large;
+    position: absolute;
+    top: 17px;
+    left: 1rem;
+    cursor: pointer;
+}
+#close{
+    display: none;
+}
+.nav-bar-right{
+    margin: 10px;
+}
+.th{
+    margin-right: 20px;
+    width: 100px;
+    text-align: center;
+    background-color: rgb(109, 205, 109);
+    border: none;
+    outline: none;
+}
+.log-in{
+    margin-right: 10px;
+    font-size: large;
+}
+.search {
+    display:inline-block;
+    align-items:center;
+    padding:10px 20px;
+    margin-left:40%;
+}
+input {
+    flex:1;
+    height:50px;
+    background:#252525;
+    border:0;
+    outline:0;
+    font-size:18px;
+    color:#b1b0b0ef;
+    border-radius:50px;
+}
+button {
+    background:transparent;
+    border:0;
+    outline:0;
+}
+button i.bi-search {
+    width:25px;
+    color:#555;
+    font-size:22px;
+    cursor:pointer;
+}
+.film-search{
+    max-width:400px;
+    position: relative;
+    left: 540px;
+}
+.film-search li:hover{
+    background-color:#555;
+}
+div.name{
+    background-color:rgba(40, 40, 40,0.75);;
+    text-align:center;
+    color:white;
+    padding:0;
+}
+.name p{
+    margin-bottom: 10px;
+}
+ul.nav {
+    list-style-type:none;
+}
+
+header li {
+    background-color: #252525;
+    float:left;
+    color:white;
+    padding:0 0 0 10px;
+    margin-bottom:20px;
+    
+        a.about{
+            margin-right:0px;
+        };
+        
+}
+
+
+a.home,a.anime,a.action,a.comedy,a.drama,a.horror,a.arabic,a.english,a.about {
+    text-decoration:none;
+    float:left;
+    color:white;
+    text-align:center;
+}
+
+nav {
+    a:hover{
+    background-color:rgb(112, 112, 112);
+    };
+}
+
+a.comedy:link {
+    background-color:#8b8b8baf;
+
+}
+
+a.b1 {
+    margin-left:10px;
+    
+}
+
+a.b1, a.b2 {
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 26px;
+    font-weight: 600;
+    display:inline-block;
+    color:#909090;
+    border-right:0;
+    border:0;
+    margin-top:10px;
+    background-color:#252525;
+    text-align:center;
+    text-decoration:none;
+
+}
+
+
+a.b1:hover,a.b2:hover {
+    color:black;
+    background-color: white;
+    font-weight:bold;
+}
+
+div.header1,div.header2,div.header3,div.header4,div.header5 {
+    text-align:left;
+    display:inline;
+    text-indent: 10px;
+
+}
+
+div.popular,div.EnglishFilms2024,div.Films2023,div.Films2022,div.Films2021 {
+    background-color:rgba(40, 40, 40,0.75);
+    display:flex;
+    text-align:center;
+    padding:20px;
+}
+
+.first,.second,.third,.fourth,.fifth {
+    text-align:center;
+    text-indent:5px;
+    font-size:medium;
+    margin-bottom:10px;
+}
+
+img.film1,img.film2,img.film3,img.film4,img.film5 {
+    margin:10px 10px 10px 10px;
+    padding:10px;
+
+}
+
+div.popular img.film5 {
+    width:65%;
+    height:65%;
+}
+
+div.popular img.film3 {
+    width:72%;
+    height:72%;
+
+}
+
+div.popular img.film1 {
+    width:80%;
+    height:80%;
+
+}
+
+div.popular img.film2 {
+    width:72%;
+    height:70%;
+}
+
+.name1,.name2,.name3,.name4,.name5 {
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+div .link{
+    text-decoration:none;
+    color:white;
+    display:block;
+}
+
+div .link:hover {
+    border-radius:10px;
+    border:5px solid rgb(167, 167, 167);
+    padding:0%;
+}
+
+div.popular img,div.EnglishFilms2024 img,div.Films2023 img,div.Films2022 img,div.Films2021 img {
+    width:60%;
+    height:60%;
+
+}
+
+div.EnglishFilms2024 img.film3 {
+    width:59%;
+    height:59%;
+}
+
+div.Films2022 img.film1 {
+    width:60%;
+    height:50%;
+}
+
+div.Films2022 img.film4 {
+    width:63%;
+    height:64%;
+}
+
+div.Films2022 img.film2 {
+    width:65%;
+    height:66%;
+}
+
+div.Films2022 img.film3 {
+    width:65%;
+    height:65%;
+
+}
+
+div.Films2021 img.film4 {
+    width:70%;
+    height:70%;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    position: relative;
+}
+footer .logo{
+    width: 80%;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 0 0 10px 0;
+    margin: 20px 10%;
+    position: absolute;
+    left: 0;
+    border-bottom: 3px solid rgb(109, 205, 109);
+}
+footer .logo i:hover{
+    scale: 1.1;
+    color: rgb(109, 205, 109);
+}
+footer .copyright .right{
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 100px;
+}
+footer .copyright .Thank{
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 70px;
+}

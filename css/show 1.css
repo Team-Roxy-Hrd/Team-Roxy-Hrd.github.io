@@ -1,0 +1,117 @@
+* {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../pictures/14.png);
+    background: -webkit-linear-gradient(to right, #6441a5, #2a0845); /* Chrome 10-25, Safari 5.1-6 */
+    background-size: cover;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:600;
+    font-size:large;
+    color:#fff;
+    text-align:center;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div p {
+    font-size:23px;
+    font-weight:800px ;
+    text-indent:20px;
+    margin: 49px 181px;
+}
+
+iframe.ad1,iframe.ad2 {
+    overflow:-moz-hidden-unscrollable;
+}
+
+img.filmphoto {
+    margin-top:10px;
+    height:10%;
+    width:25%;
+    border: 5px ridge #2c5553;
+    position: relative;
+    margin-top: 100px;
+    z-index: 9999;
+    border-radius: 32px;
+}
+
+
+
+#down,#watch,#play {
+    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+    color:white;
+    text-decoration:none;
+    padding:15px;
+    margin:10px;
+    display:inline-block;
+    text-transform:uppercase;
+    border: 10px solid #891c2d;
+    border-radius: 50px;
+    background-color: #891c2d;
+    transition: 0.4s;
+}
+
+
+#down:hover,#watch:hover,#play:hover {
+    font-size: 25px;
+    background-color: rgb(120, 25, 25);
+    border-color: rgb(120, 25, 25);
+    background: -webkit-linear-gradient(to right, #5691c8, #457fca);  /* Chrome 10-25, Safari 5.1-6 */
+}
+
+
+iframe.film {
+    margin-top:40px;
+    display:inline;
+    border:5px ridge #0083B0;
+}
+
+
+nav {
+    a:hover{
+    background-color:blueviolet;
+    };
+}
+
+a.download1,a.download2,a.download3,a.download4 {
+    text-decoration:none;
+    color:white;
+    padding:6px 20px 6px 20px;
+    text-align:center;
+    text-transform:uppercase;
+    background-color: #1cea2c;
+    border-radius: 34px;
+    display: inline-block;
+    width: -webkit-fill-available;
+}
+
+a.download1:hover,a.download2:hover,a.download3:hover,a.download4:hover {
+    color: #000;
+    background-color: #0083B0;
+}
+
+footer {
+    background-color:black;
+    width:100%;
+    height:120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,875 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+span{
+    color: rgb(109, 205, 109);
+}
+button{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+.nav-bar{
+    height: 40px;
+    background-color: black;
+    border-bottom: 3px solid white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+}
+.logo{
+    font-size: xx-large;
+    position: absolute;
+    left: 45%;
+}
+.nav-bar-center{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 250px;
+    height: 330px;
+    gap: 20px;
+    padding: 20px;
+    position: absolute;
+    top: 60px;
+    left: 3rem;
+    animation: menu .2s 1;
+    display: none;
+}
+@keyframes menu{
+    0%{
+        height: 66px;
+        overflow: hidden;
+    }
+    25%{
+        height: 132px;
+        overflow: hidden;
+    }
+    50%{
+        height: 198px;
+        overflow: hidden;
+    }
+    75%{
+        height: 264px;
+        overflow: hidden;
+    }
+    100%{
+        height: 330px;
+        overflow: hidden;
+    }
+}
+.nav-bar-center a{
+    border-radius: 20px;
+    width: 90%;
+    height: 40px;
+    padding: 5px 5%;
+    text-align: center;
+    font-size: large;
+}
+.nav-bar-center select , .nav-bar-center option{
+    height: 60px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    font-size: large;
+    outline: none;
+}
+.nav-bar-center a:hover{ 
+    background-color: rgb(109, 205, 109);
+    scale: 1.05;
+    font-size: x-large;
+}
+.nav-bar-center select:hover{
+    background-color: rgb(109, 205, 109);
+    scale: 1.05;
+    font-size: x-large;
+}
+.menu i{
+    font-size: x-large;
+    position: absolute;
+    top: 17px;
+    left: 1rem;
+    cursor: pointer;
+}
+#close{
+    display: none;
+}
+.nav-bar-right{
+    margin: 10px;
+}
+.th{
+    margin-right: 20px;
+    width: 100px;
+    text-align: center;
+    background-color: rgb(109, 205, 109);
+    border: none;
+    outline: none;
+}
+.log-in{
+    margin-right: 10px;
+    font-size: large;
+}
+.serch{
+    width: 100%;
+}
+.serch button{
+    position: absolute;
+    top: 20px;
+    right: 220px;
+    cursor: pointer;
+}
+.serch span{
+    color: gold;
+}
+#search_box{
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    scale: 0;
+    display: none;
+    animation: trans .2s forwards;
+    background-color: rgba(8, 3, 3, 0.21);
+}
+@keyframes trans{
+    20%{ scale: 0.2;}
+    40%{ scale: 0.4;}
+    60%{ scale: 0.6;}
+    80%{ scale: 0.8;}
+    100%{ scale: 1;}
+}
+.serch input{
+    margin: 30px 36%;
+    width: 400px;
+    height: 35px;
+    border-radius: 17.5px;
+    padding: 0 5px 0 10px;
+    color: rgb(109, 205, 109);
+    font-size: large;
+}
+.serch i{
+    position: absolute;
+    top: 34px;
+    right: 560px;
+    color: black;
+    font-size: xx-large;
+}
+.selections ul{
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: -20px 37% 0 38%;
+    padding: 10px 0;
+    overflow-y: scroll;
+}
+.selections li{
+    margin-bottom: 20px;
+    font-size: x-large;
+    width: 90%;
+    height: 30px;
+    padding: 5px 0 5px 15px;
+    margin: 0 10px;
+    text-align: center;
+}
+.selections li:hover{
+    background-color: rgb(109, 205, 109);
+}
+.show{
+    width: 100%;
+    height: 600px;
+    background-image: url(../pictures/headerbackground.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+.content{
+    width: 30%;
+    height: 60%;
+    padding: 100px 80px;
+}
+.content h1, .content p, .content h3, .content button{
+    color: white;
+}
+.content h1{
+    text-align: center;
+}
+.content p{
+    padding: 20px;
+    font-size: large;
+}
+.content h3{
+    padding:30px 20px;
+}
+.content button{
+    background-color: rgb(109, 205, 109);
+    font-size: x-large;
+    width: 35%;
+    height: 40px;
+    margin: 10px 0 0 30%;
+    border-radius: 10px;
+    transition: all .2S ease;
+    border: none;
+}
+.content button:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+.content button:active{
+    scale: 0.99;
+}
+h1 i{
+    color: rgb(109, 205, 109);
+    position: relative;
+    top: 3px;
+}
+.section{
+    margin: 0 0 300px 0;
+    padding: 20px;
+}
+.section > div{
+    border: 3px solid black;
+}
+.section .advertisements{
+    border: none;
+}
+.advertisements{
+    width: 28%;
+    height: fit-content;
+    float: left;
+    margin: 0;
+}
+.advertisements iframe{
+    height: 250px;
+    width: 300px;
+    margin: 50px 0 0 10%;
+}
+.head_show{
+    height: 50px;
+    display: flex;
+    border-bottom: 3px solid black;
+}
+.head_show h1{
+    padding: 5px 10px 5px 5px;
+    border-right: 3px solid black;
+}
+.head_show h2{
+    margin: 10px;
+}
+.popular{
+    width: 71%;
+    float: right;
+    background-color: rgb(238, 194, 185);
+}
+.popular .row1, .popular .row2{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0;
+    gap: 20px;
+}
+.row1 button, .row2 button{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: x-large;
+    cursor: pointer;
+    display: none;
+}
+.row1 .anime, .row2 .anime{
+    display: flex;
+    gap: 25px;
+}
+.row1 p , .row2 p {
+    text-align: center;
+    color: black;
+    margin: 10px;
+    font-size: large;
+}
+.recent , .recent1{
+    position: relative;
+    background-color: rgb(238, 194, 185);
+    width: 71%;
+    float: right;
+    position: relative;
+    top: -300px;
+}
+.recent .content, .recent1 .content{
+    display: flex;
+    padding: 30px 27px;
+}
+.recent .anime , .recent1 .anime{
+    display: flex;
+    gap: 25px;
+}
+.recent  p, .recent1 p{
+    text-align: center;
+    color: black;
+    margin: 0;
+    font-size: large;
+}
+.recent .content button, .recent1 .content button{
+    background-color: rgba(0, 0, 0, 0);
+    height: 250px;
+    margin: 0;
+    border: none;
+    font-size: x-large;
+    cursor: pointer;
+    display: none;
+}
+.recent1{
+    display: none;
+}
+.discription{
+    display: flex;
+    width: 28%;
+    height: 700px;
+    position: relative;
+    top: 150px;
+    flex-direction: column;
+    background-color: rgb(238, 194, 185);
+}
+.discription .anime{
+    width: 95%;
+    height: 230px;
+    border-top: 4px solid red;
+    border-right: 4px solid rgb(255, 115, 0);
+    border-bottom: 4px solid orange;
+    border-left: 4px solid rgb(255, 238, 0);
+    animation: frame 2s infinite ease;
+    margin: 5px 6px;
+    display: flex;
+}
+.discription .anime .tools{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.discription .anime img{
+    width: 150px;
+    height: 205px;
+    margin: 5px 0 0 5px;
+}
+.discription .anime .new{
+    color: black;
+    background-color: rgb(109, 205, 109);
+    font-size: x-large;
+    width: 220px;
+    height: fit-content;
+    padding: 5px;
+    margin: 10px 5px;
+    text-align: center;
+    border-radius: 20px;
+}    
+.discription .anime .innerdiscription{
+    height: fit-content;
+    width: 220px;
+    float: right;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    color: black;
+}
+.discription .anime .new:hover{
+    scale: .9;
+}
+.row1 img , .row2 img ,.recent .content img, .recent1 .content img{
+    width: 170px;
+    height: 240px;
+    border-top: 4px solid red;
+    border-right: 4px solid rgb(255, 115, 0);
+    border-bottom: 4px solid orange;
+    border-left: 4px solid yellow;
+    animation: frame 3s infinite ease;
+}
+@keyframes frame{
+    25%{
+        border-top: 4px solid rgb(255, 255, 0);
+        border-right: 4px solid red;
+        border-bottom: 4px solid rgb(255, 115, 0);
+        border-left: 4px solid orange;
+    }
+    50%{
+        border-top: 4px solid orange;
+        border-right: 4px solid rgb(255, 255, 0);
+        border-bottom: 4px solid red;
+        border-left: 4px solid rgb(255, 115, 0);
+    }
+    75%{
+        border-top: 4px solid rgb(255, 115, 0);
+        border-right: 4px solid orange;
+        border-bottom: 4px solid rgb(255, 255, 0);
+        border-left: 4px solid red;
+    }
+}
+.row1 img:hover , .row2 img:hover, .recent img:hover, .recent1 img:hover{
+    scale: 1.1;
+}
+.evaluation{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50%;
+    height: 650px;
+    margin: 20px 25%;
+    position: relative;
+    transition: transform 0.5s ease;
+}
+.evaluation h1{
+    position: absolute;
+    top: 0;
+    margin:20px 18% 0 18%;
+} 
+.evaluation .exit{
+    font-size: x-large;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+}
+.evaluation img{
+    margin: 0 4% 30px 4%;
+}
+.evaluation #stars{
+    text-align: center;
+}
+.evaluation i{
+    font-size: x-large;
+    width: fit-content;
+}
+.evaluation button{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+.evaluation #star1:hover, .evaluation #star2:hover, .evaluation #star3:hover, .evaluation #star4:hover, .evaluation #star5:hover{
+    color: gold;
+}
+.evaluation #Full1, .evaluation #Full2, .evaluation #Full3, .evaluation #Full4, .evaluation #Full5{
+    color: gold;
+    display: none;
+} 
+.evaluation #message{
+    text-align: center;
+    color: gold;
+    margin: 10px 0;
+    display: none;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    position: relative;
+}
+footer .logo{
+    width: 80%;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 0 0 10px 0;
+    margin: 20px 10%;
+    position: absolute;
+    left: 0;
+    border-bottom: 3px solid rgb(109, 205, 109);
+}
+footer .logo i:hover{
+    scale: 1.1;
+    color: rgb(109, 205, 109);
+}
+footer .copyright .right{
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 100px;
+}
+footer .copyright .Thank{
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 70px;
+}
+@media (max-width:480px){
+    *{
+        font-size: large;
+    }
+    span{
+        font-size: x-large;
+    }
+    .nav-bar{
+        height: 30px;
+    }
+    .logo{
+        font-size: x-large;
+        position: absolute;
+        left: 36%;
+    }
+    .nav-bar-center{
+        width: 80%;
+        position: absolute;
+        top: 55px;
+        left: 6%;
+    }
+    .menu i{
+        position: absolute;
+        top: 14px;
+        left: 1rem;
+    }
+    .nav-bar-right{
+        margin: 5px;
+    }
+    .th{
+        margin-right: 0px;
+        width: 50px;
+    }
+    .log-in{
+        margin-right: 0;
+    }
+    .serch{
+        width: 100%;
+    }
+    .serch button{
+        position: absolute;
+        top: 14px;
+        right: 120px;
+        cursor: pointer;
+    }
+    .serch span{
+        color: gold;
+    }
+    .serch input{
+        margin: 30px 18%;
+        width: 300px;
+    }
+    .serch i{
+        position: absolute;
+        right: 78px;
+    }
+    .selections ul{
+        width: 290px;
+        height: 100px;
+        margin: -30px 50px 0 100px;
+    }
+    .show{
+        height: 300px;
+        background-size: contain;
+        margin-bottom: 100px;
+    }
+    .content{
+        width: 50%;
+        padding: 20px 10px;
+    }
+    .content h1{
+        text-align: center;
+        font-size: x-large;
+    }
+    .content p{
+        padding: 20px;
+        font-size: small;
+    }
+    .content h3{
+        padding: 0 20px;
+        font-size: small;
+    }
+    .content button{
+        font-size: large;
+        width: 50%;
+        height: 30px;
+        margin: 10px 0 0 25%;
+    }
+    .section{
+        padding: 10px;
+    }    
+    .advertisements{
+        width: 100%;
+        float: none;
+        border: none;
+    }
+    .advertisements iframe{
+        width: fit-content;
+        height: 250px;
+        margin: 50px 85px;
+    }
+    .head_show{
+        height: 40px;
+    }
+    .head_show h1{
+        font-size: x-large;
+    }
+    .head_show h2{
+        margin: 10px;
+        font-size: large;
+    }
+    .popular{
+        width: 100%;
+        float: none;
+        overflow: hidden;
+    }
+    .popular .anime{
+        gap: 10px;
+    }
+    .popular .row1, .popular .row2{
+        margin: 20px 0;
+        gap: 0;
+    }
+    .row1 button, .row2 button, .recent .content button{
+        font-size: large;
+        display:block;
+    }
+    .anime3,.anime4, .anime5{
+        display: none;
+    }
+    .recent{
+        width: 100%;
+        float: none;
+        position: relative;
+        top: 0;
+    }
+    .recent .content{
+        padding: 30px 5px;
+        gap: 15px;
+    }
+    .recent .anime{
+        gap: 30px;
+    }
+    .recent .anime1{
+        margin: 0;
+    }
+    .recent .anime2, .recent .anime3, .recent .anime4{
+        margin: 0;
+    }
+    .recent .anime5{
+        margin: 0;
+    }
+    .discription{
+        width: 100%;
+        position: relative;
+        top: 0;
+        margin: 50px 0;
+    }
+    .discription .anime .new{
+        width: 160px;
+        padding: 5px 55px;
+    }    
+    .discription .anime .innerdiscription{
+        width: 260px;
+        float: right;
+    }
+    .evaluation{
+        width: 90%;
+        height: 480px;
+        margin: 20px 5%;
+    }
+    .evaluation h1{
+        margin:50px 20% 0 20%;
+    } 
+    .evaluation img{
+        width: 90%;
+        margin: 150px 5% 30px 5%;
+    }
+    footer{
+        height: 200px;
+    }
+    footer .logo i{
+        font-size: xx-large;
+    }
+}
+@media (min-width:481px) and (max-width:768px)
+{
+    *{
+        font-size: x-large;
+    }
+    span{
+        font-size: xx-large;
+    }
+    .nav-bar{
+        height: 40px;
+    }
+    .logo{
+        font-size: xx-large;
+        position: absolute;
+        left: 40%;
+    }
+    .nav-bar-center{
+        width: 300px;
+        position: absolute;
+        top: 65px;
+        left: 2rem;
+    }
+    .menu i{
+        position: absolute;
+        top: 18px;
+        left: 1rem;
+    }
+    .nav-bar-right{
+        margin: 5px;
+    }
+    .th{
+        margin-right: 5px;
+        width: 70px;
+    }
+    .log-in{
+        margin-right: 5px;
+    }
+    .serch{
+        width: 100%;
+    }
+    .serch button{
+        position: absolute;
+        top: 18px;
+        right: 165px;
+        cursor: pointer;
+    }
+    .serch span{
+        color: gold;
+    }
+    .serch input{
+        margin: 30px 27%;
+        width: 350px;
+    }
+    .serch i{
+        position: absolute;
+        right: 195px;
+    }
+    .selections ul{
+        width: 340px;
+        height: 100px;
+        margin: -30px 50px 0 220px;
+    }
+    .show{
+        height: 500px;
+        background-size: contain;
+    }
+    .content{
+        width: 40%;
+        padding: 30px 30px;
+    }
+    .content p{
+        font-size: medium;
+    }
+    .content button{
+        font-size: large;
+        width: 50%;
+        margin: 10px 0 0 25%;
+    }
+    .section{
+        margin: 0 0 400px 0;
+    }
+    .section .advertisements{
+        border: none;
+    }
+    .advertisements{
+        width: 450px;
+        height: fit-content;
+        margin: 50px 22%;
+        float: none;
+    }
+    .head h1{
+        padding:10px;
+        font-size: x-large;
+    }
+    .head h2{
+        margin: 15px;
+        font-size: large;
+    }
+    .popular{
+        width: 60%;
+        float: left;
+    }
+    .popular .row1, .popular .row2{
+        margin: 50px 0;
+        overflow: hidden;
+        justify-content:flex-start;
+    }
+    .row1 button, .row2 button{
+        display: block;
+        margin: 0;
+    }
+    .popular .anime{
+        gap: 15px;
+        margin: 0 -10px;
+    }
+    .popular .anime3,.popular .anime4, .popular .anime5{
+        display: none;
+    }
+    .recent{
+        display: none;
+    }
+    .recent1{
+        display: block;
+        width: 100%;
+        float: left;
+        position: relative;
+        top: 0;
+        margin: 30px 0 0 0;
+    }
+    .recent1 .content{
+        gap: 15px;
+        margin: 0;
+        padding: 30px 7px;
+    }
+    .recent1 .content button{
+        display: block;
+    }
+    .recent1 .anime{
+        gap: 50px;
+    }
+    .recent1 .anime4, .recent1 .anime5{
+        display: none;
+    }
+    .discription{
+        width: 38%;
+        height: 790px;
+        position: relative;
+        top: 0;
+        left: 1%;
+        margin: 0;
+    }
+    .discription .anime{
+        width: 93%;
+        height: 250px;
+        margin: 5px;
+    }
+    .discription .anime .tools{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+    .discription .anime img{
+        width: 100px;
+        height: 200px;
+    }
+    .discription .anime .new{
+        font-size: large;
+        position: absolute;
+        bottom: -5px;
+        left: -100px;
+    }    
+    .discription .anime .innerdiscription{
+        width: 130px;
+        position: absolute;
+        top: 0;
+        font-size:small;
+    }
+    .evaluation{
+        width: 70%;
+        height: 520px;
+        margin: 50px 15%;
+        position: relative;
+        top: 200px;
+    }
+    .evaluation h1{
+        width: 80%;
+        margin:50px 10% 0 13%;
+    } 
+    .evaluation img{
+        width: 90%;
+        margin: 50px 5% 30px 5%;
+    }
+    footer{
+        position: relative;
+        bottom: -200px;
+    }
+}

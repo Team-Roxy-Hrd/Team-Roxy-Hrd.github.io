@@ -1,0 +1,82 @@
+
+body{
+    width: 80%;
+    position: relative;
+    background-image: url(../pictures/pp.jpeg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    tr{
+    text-align: center;
+    font-size: bold;
+    }
+    tbody tr td{
+    background-color: white;
+    }
+    table thead th
+    {
+    background-color: rgb(41, 113, 80);
+    color: white;
+    font-size: 30px;
+    }
+    table{
+        margin-left: 100px;
+    }
+    .color{
+    background-color: #ccc9c9 ;
+    }
+    table thead th,tbody tr td{
+    
+    text-align: center;
+    font-size: bold;
+    border-color: rgb(23, 21, 18);
+    height: 50px;
+    }
+    table thead th,tbody tr td{
+        border: 5px solid black;
+        box-shadow: 5px 5px 5px 0 #000000 inset;
+        box-shadow: 10px 10px 0px black;
+        border-radius: 40px;
+    }
+    .name :hover{
+    /* height: 60px; */
+    /* font-size: 15px; */
+    background-color: rgb(44, 98, 157);
+    color: white;
+    }
+    a:hover{
+        text-decoration: none;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        border-radius: 5px;
+    }
+    
+    h1{
+        text-align: center;
+        margin-left: 20%;
+        margin-top: 30px;
+        font-size: 79px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .name td{
+        font-size: 19px;
+        outline: black;
+        border-radius: 80px;
+        box-shadow: 10px 10px 0px black;
+    }
+    a{
+    
+        text-decoration: none;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        
+    }
+    img{
+        margin-top: 7px;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        align-items: center;
+    }
