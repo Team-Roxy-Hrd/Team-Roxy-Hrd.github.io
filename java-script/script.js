@@ -61,27 +61,27 @@ document.addEventListener("DOMContentLoaded", function() {
 const movies = [
     {
         name: "hassan elmasry",
-        url: "show 1.html"
+        url: "show-1.html"
     },
     {
         name: "harons",
-        url: "show 1.html",
+        url: "show-1.html",
     },
     {
         name: "hareva",
-        url: "show 1.html"
+        url: "show-1.html"
     },
     {
         name: "yogiho",
-        url: "show 1.html"
+        url: "show-1.html"
     },
     {
         name: "osrorah",
-        url: "show 1.html"
+        url: "show-1.html"
     },
     {
         name: "hexa",
-        url: "show 1.html"
+        url: "show-1.html"
     },
     
 ];
