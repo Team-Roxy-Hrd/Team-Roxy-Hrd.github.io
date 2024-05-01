@@ -1,4 +1,3 @@
-function validateForm() {
     var fullName = document.forms["paymentForm"]["full_name"].value;
     var email = document.forms["paymentForm"]["email"].value;
     var address = document.forms["paymentForm"]["address"].value;
@@ -10,6 +9,7 @@ function validateForm() {
     var expYear = document.forms["paymentForm"]["exp_year"].value;
     var cvv = document.forms["paymentForm"]["cvv"].value;
 
+function validateForm() {
     if (fullName == "" || email == "" || address == "" || city == "" || state == "Choose State.." || zipCode == "" || cardNumber == "" || expMonth == "" || expYear == "Choose Year.." || cvv == "") {
         alert("Please fill out all fields");
         return false;
