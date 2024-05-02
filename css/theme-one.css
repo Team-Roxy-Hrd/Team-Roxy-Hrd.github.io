@@ -1,4 +1,6 @@
-
+.menu {
+    display: none;
+}
 .nav-bar {
     display: flex;
     justify-content: space-between;
