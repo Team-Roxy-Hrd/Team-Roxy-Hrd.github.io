@@ -6,8 +6,39 @@
     <title>Payment</title>
     <link rel="stylesheet" href="css/payment.css">
 </head>
-<body>
+    <body>
     <header>
+        <main class="nav-bar">
+            <div class="nav-bar-left">
+                <a href="#" class="logo"><span>R</span>OXY <span>H</span>RD</a>
+            </div>
+            <div class="menu">
+                <button id="open" onclick="menu_op()"><i class="fa-solid fa-bars"></i></button>
+                <button id="close" onclick="menu_cl()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="nav-bar-center">
+                <a href="#">Home</a>
+                <select id="movieSelect" name="Movies" class="movies" onchange="location = this.value;">
+                    <option hidden selected >Movies</option>
+                    <option value="horor.html">horror</option>
+                    <option value="action.html">action</option>
+                    <option value="comedypage.html">comedy</option>
+                </select>
+                <a href="tv-shows.html" >Tv Shows</a>
+                <a href="anime.html" >Anime</a>
+                <a href="payment.html" >payment</a>
+                <a href="table project.html" >About us?</a>
+            </div>
+            <div class="nav-bar-right">
+                <select id="themeSelect" class="th" onchange="changeTheme()">
+                    <option value="css/theme-one.css">Th-1</option>
+                    <option value="css/theme-two.css">Th-2</option>
+                </select>
+                <a href="login.html"><button class="log-in">log in</button></a>
+            </div>
+            <br>
+    </header>
+    <section class="content">
         <div class="container">
             <div class="left">
                 <h3>BILLING ADDRESS</h3>
@@ -74,7 +105,8 @@
                 </form>
             </div>
         </div>
-    </header>
+    </section>
     <script src="java-script/payment.js"></script>
 </body>
+
 </html>
