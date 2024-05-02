@@ -1,18 +1,30 @@
-    var fullName = document.forms["paymentForm"]["full_name"].value;
-    var email = document.forms["paymentForm"]["email"].value;
-    var address = document.forms["paymentForm"]["address"].value;
-    var city = document.forms["paymentForm"]["city"].value;
-    var state = document.forms["paymentForm"]["state"].value;
-    var zipCode = document.forms["paymentForm"]["zip_code"].value;
-    var cardNumber = document.forms["paymentForm"]["card_number"].value;
-    var expMonth = document.forms["paymentForm"]["exp_month"].value;
-    var expYear = document.forms["paymentForm"]["exp_year"].value;
-    var cvv = document.forms["paymentForm"]["cvv"].value;
+function validateBothForms() {
+    var isPaymentFormValid = validateForm('paymentForm');
+    var isCheckoutFormValid = validateForm('checkoutForm');
 
-function validateForm() {
-    if (fullName == "" || email == "" || address == "" || city == "" || state == "Choose State.." || zipCode == "" || cardNumber == "" || expMonth == "" || expYear == "Choose Year.." || cvv == "") {
-        alert("Please fill out all fields");
+    if (isPaymentFormValid && isCheckoutFormValid) {
+        alert("All fields are valid. Submitting...");
+    } else {
+        alert("Please fill out all fields in both forms");
+    }
+}
+
+function validateForm(formName) {
+    var form = document.forms[formName];
+    var fullName = form["full_name"].value;
+    var email = form["email"].value;
+    var address = form["address"].value;
+    var city = form["city"].value;
+    var state = form["state"].value;
+    var zipCode = form["zip_code"].value;
+
+    if (fullName == "" || email == "" || address == "" || city == "" || state == "Choose State.." || zipCode == "") {
+        alert("Please fill out all fields in " + formName);
         return false;
     }
-    // Additional validation rules can be added here
-}
+    else {
+        alert("All fields are valid. Submitting...")
+    }
+
+    return true;
+} 
