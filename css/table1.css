@@ -1,5 +1,8 @@
 
-body{
+h1 {
+    text-align:center;
+}
+.body{
     width: 80%;
     position: relative;
     background-image: url(../pictures/pp.jpeg); 
