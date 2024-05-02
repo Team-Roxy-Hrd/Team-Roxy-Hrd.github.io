@@ -11,72 +11,55 @@
 html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     background-color: black;
     color: white;
     font-family: "Work Sans", sans-serif;
 }
 
-.fullbody{
+.fullbody {
     background-color: black;
 }
-.fullbody .container{
+
+.fullbody .container {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 15px;
     margin-right: auto;
     margin-right: auto;
 }
-.playlists{
-    height: 245px;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-.playlists::-webkit-scrollbar,.scroll::-webkit-scrollbar{
-    width: 5px;
-    height: 50px;
-}
-.playlists::-webkit-scrollbar-thumb,.scroll::-webkit-scrollbar-thumb{
-    display: none;
-}
-.playlists::-webkit-scrollbar-track,.scroll::-webkit-scrollbar-track{
-    background-color: transparent;
-}
-a{
+
+a {
     color: rgb(143, 141, 141);
     text-decoration: none;
     font-size: 13px;
 }
-a:hover{
+
+a:hover {
     color:white;
 }
 
-
-.conatiner2{
+.conatiner2 {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 20px;
     margin-left: auto;
     margin-right: auto;
 }
-.container2 .header{
+
+.container2 .header {
     background-color: var(--main-color);
     border-radius: 8px;
     
 }
 
-.sec2:hover ::-webkit-scrollbar-thumb,.con:hover .scroll::-webkit-scrollbar-thumb{
-    display: block;
-    background-color: rgb(143, 141, 141,0.5);
-}
-.playlists::-webkit-scrollbar-thumb:hover,.scroll::-webkit-scrollbar-thumb:hover{
-    background-color: grey;
-}
-.container2 .header{
+.container2 .header {
     display: flex;
     justify-content: space-between;
 }
-.con{
+
+.con {
     padding: 2%;
     background-color: rgb(34, 34, 34);
     background: linear-gradient(180deg,
@@ -84,31 +67,36 @@ a:hover{
     rgba(21, 21, 21,1) 35%,
     rgba(0,0,0,1) 100%);
 }
-.main div{
+
+.main div {
     display: flex;
     justify-content: space-between;
 }
-.albums img{
+
+.albums img {
     width: 160px;
     height:170px;
     border-radius: 8px;
     margin-bottom: 7px;
 }
- h4{
+
+h4{
     font-size: 20px;
     color: white;
-    font-weight: bold;
-    
+    font-weight: bold;   
 }
-.albums div:hover{
+
+.albums div:hover {
     border: 2px solid #747070;
     border-radius:5px ;
 }
-.albums{
+
+.albums {
     display: flex;
     justify-content: space-evenly;
 }
-.albums div{
+
+.albums div {
     margin-top: 7px;
     border-radius: 8px;
     padding: 17px;
@@ -117,16 +105,18 @@ a:hover{
     justify-content: space-between;
     background-color: var(--main-color);
 }
-.albums div p{
+
+.albums div p {
     margin-top: 4px;
     color: rgb(143, 141, 141);;
 }
-.scroll{
-    height: 83vh;
+
+.scroll {
     overflow-x: hidden;
     overflow-y: auto;
 }
-input{
+
+input {
     margin: auto 50%;
     width: 30%;
     height: 40px;
@@ -137,3 +127,4 @@ input{
     font-size: 20px;
     text-align: center;
  }
+
