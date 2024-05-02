@@ -5,8 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Action</title>
-    <link rel="stylesheet" href="css/action.css">
+    <link rel="stylesheet" href="action.css">
+    <link id="themeLink" rel="stylesheet" type="text/css" href="../css/theme-one.css">
+
 </head>
+<main class="nav-bar">
+    <div class="nav-bar-left">
+        <a href="#" class="logo"><span>R</span>OXY <span>H</span>RD</a>
+    </div>
+    <div class="menu">
+        <button id="open" onclick="menu_op()"><i class="fa-solid fa-bars"></i></button>
+        <button id="close" onclick="menu_cl()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="nav-bar-center">
+        <a href="#">Home</a>
+        <select id="movieSelect" name="Movies" class="movies" onchange="location = this.value;">
+            <option hidden selected >Movies</option>
+            <option value="horor.html">horror</option>
+            <option value="action.html">action</option>
+            <option value="comedypage.html">comedy</option>
+        </select>
+        <a href="tv-shows.html" >Tv Shows</a>
+        <a href="anime.html" >Anime</a>
+        <a href="payment.html" >payment</a>
+        <a href="table project.html" >About us?</a>
+    </div>
+    <div class="nav-bar-right">
+        <select id="themeSelect" class="th" onchange="changeTheme()">
+            <option value="css/theme-one.css">Th-1</option>
+            <option value="css/theme-two.css">Th-2</option>
+        </select>
+        <a href="login.html"><button class="log-in">log in</button></a>
+    </div>
+</main>
 
 <body>
     <header>
@@ -22,33 +53,33 @@
                 </div>
                 <div class="albums">
                     <div class="movie">
-                        <a href="show 1.html" target="_blank">
-                            <img src="images/WhatsApp Image 2024-04-30 at 22.48.17_8b51686c.jpg" alt="">
+                        <a href="show-1.html" target="_blank">
+                            <img src="images/WhatsApp Image 2024-04-30 at 22.48.17_8b51686c.jpg" alt="movie">
                             <span>Gladiator</span>
                         </a>
                     </div>
                     <div class="movie">
-                        <a href="show 1.html" target="_blank">
-                            <img src="images/WhatsApp Image 2024-04-30 at 22.48.15_d422ec5c.jpg" alt="">
+                        <a href="show-1.html" target="_blank">
+                            <img src="images/WhatsApp Image 2024-04-30 at 22.48.15_d422ec5c.jpg" alt="movie">
                             <span>Ava</span>
                         </a>
                     </div>
                     <div class="movie">
-                        <a href="" target="_blank">
+                        <a href="show-1.html" target="_blank">
                             <img src="images/fast x.jpeg" alt="">
-                            <span>movie</span>
+                            <span>Fast-x</span>
                         </a>
                     </div>
                     <div class="movie">
-                        <a href="" target="_blank">
-                            <img src="images/WhatsApp Image 2024-04-30 at 22.48.17_8b51686c.jpg" alt="">
-                            <span>movie</span>
+                        <a href="show-1.html" target="_blank">
+                            <img src="images/WhatsApp Image 2024-04-30 at 22.48.16_843b7e55.jpg" alt="movie">
+                            <span>Avengers</span>
                         </a>
                     </div>
                     <div class="movie">
-                        <a href="" target="_blank">
-                            <img src="images/WhatsApp Image 2024-04-30 at 22.48.17_46acbd6e.jpg" alt="">
-                            <span>movie</span>
+                        <a href="show-1.html" target="_blank">
+                            <img src="images/WhatsApp Image 2024-04-30 at 22.48.17_46acbd6e.jpg" alt="movie">
+                            <span>Bad Boys</span>
                         </a>
                     </div>
                 </div>
@@ -56,33 +87,33 @@
             <div class="row">
                 <div class="albums">
                     <div class="movie">
-                        <a href="show 1.html" target="_blank">
-                            <img src="images/WhatsApp Image 2024-04-30 at 22.48.17_46acbd6e.jpg" alt="">
-                            <span>movie</span>
+                        <a href="show-1.html" target="_blank">
+                            <img src="images/WhatsApp Image 2024-04-30 at 22.48.16_7b7d2460.jpg" alt="movie">
+                            <span>The gentlemen</span>
                         </a>
                     </div>
                     <div class="movie">
-                        <a href="show 1.html" target="_blank">
-                            <img src="images/damsel.jpeg" alt="">
-                            <span>movie</span>
+                        <a href="show-1.html" target="_blank">
+                            <img src="images/المصلحة.jpeg" alt="movie">
+                            <span>El maslaha</span>
                         </a>
                     </div>
                     <div class="movie">
-                        <a href="" target="_blank">
-                            <img src="images/الخلية.jpeg" alt="">
-                            <span>movie</span>
+                        <a href="show-1.html" target="_blank">
+                            <img src="images/الخلية.jpeg" alt="movie">
+                            <span>El khaliya</span>
                         </a>
                     </div>
                     <div class="movie">
-                        <a href="" target="_blank">
-                            <img src="images/shut in.jpeg" alt="">
-                            <span>movie</span>
+                        <a href="show-1.html" target="_blank">
+                            <img src="images/shut in.jpeg" alt="movie">
+                            <span>Shut in</span>
                         </a>
                     </div>
                     <div class="movie">
-                        <a href="" target="_blank">
-                            <img src="images/تيتو.jpeg" alt="">
-                            <span>movie</span>
+                        <a href="show-1.html" target="_blank">
+                            <img src="images/تيتو.jpeg" alt="movie">
+                            <span>Tito</span>
                         </a>
                     </div>
                 </div>
@@ -96,33 +127,33 @@
                 </div>
                 <div class="albums">
                     <div class="movie">
-                        <a href="" target="_blank">
-                            <img src="images/1917.jpeg" alt="">
+                        <a href="show-1.html" target="_blank">
+                            <img src="images/1917.jpeg" alt="movie">
                             <span>1917</span>
                         </a>
                     </div>
                     <div class="movie">
-                        <a href="" target="_blank">
-                            <img src="images/aliens.jpeg" alt="">
-                            <span>movie</span>
+                        <a href="show-1.html" target="_blank">
+                            <img src="images/aliens.jpeg" alt="movie">
+                            <span>Aliens</span>
                         </a>
                     </div>
                     <div class="movie">
-                        <a href="" target="_blank">
-                            <img src="images/damsel.jpeg" alt="">
-                            <span>movie</span>
+                        <a href="show-1.html" target="_blank">
+                            <img src="images/damsel.jpeg" alt="movie">
+                            <span>Damsel</span>
                         </a>
                     </div>
                     <div class="movie">
-                        <a href="" target="_blank">
-                            <img src="images/fast x.jpeg" alt="">
-                            <span>movie</span>
+                        <a href="show-1.html" target="_blank">
+                            <img src="images/fast x.jpeg" alt="movie">
+                            <span>Fast-x</span>
                         </a>
                     </div>
                     <div class="movie">
-                        <a href="" target="_blank">
-                            <img src="images/IMG-20240430-WA0194.jpg" alt="">
-                            <span>movie</span>
+                        <a href="show-1.html" target="_blank">
+                            <img src="images/WhatsApp Image 2024-04-30 at 22.48.16_c575faa3.jpg" alt="movie">
+                            <span>Best man</span>
                         </a>
                     </div>
                 </div>
@@ -131,33 +162,33 @@
             <div class="row">
                 <div class="albums">
                     <div class="movie">
-                        <a href="" target="_blank">
-                            <img src="images/IMG-20240430-WA0200.jpg"">
-                            <span>movie</span>
+                        <a href="show-1.html" target="_blank">
+                            <img src="images/WhatsApp Image 2024-04-30 at 22.48.17_8b51686c.jpg" alt="movie">
+                            <span>Gladiator</span>
                         </a>
                     </div>
                     <div class="movie">
-                        <a href="" target="_blank">
-                            <img src="images/IMG-20240430-WA0199.jpg" alt="">
-                            <span>movie</span>
+                        <a href="show-1.html" target="_blank">
+                            <img src="images/WhatsApp Image 2024-04-30 at 22.48.17_46acbd6e.jpg" alt="movie">
+                            <span>Bad boys</span>
                         </a>
                     </div>
                     <div class="movie">
-                        <a href="" target="_blank">
-                            <img src="images/IMG-20240430-WA0200.jpg" alt="">
-                            <span>movie</span>
+                        <a href="show-1.html" target="_blank">
+                            <img src="images/WhatsApp Image 2024-04-30 at 22.48.16_843b7e55.jpg" alt="movie">
+                            <span>Avengers</span>
                         </a>
                     </div>
                     <div class="movie">
-                        <a href="" target="_blank">
-                            <img src="images/IMG-20240430-WA0194.jpg" alt="">
-                            <span>movie</span>
+                        <a href="show-1.html" target="_blank">
+                            <img src="images/shut in.jpeg" alt="movie">
+                            <span>Shut-in</span>
                         </a>
                     </div>
                     <div class="movie">
-                        <a href="" target="_blank">
-                            <img src="images/IMG-20240430-WA0195.jpg" alt="">
-                            <span>movie</span>
+                        <a href="show-1.html" target="_blank">
+                            <img src="images/WhatsApp Image 2024-04-30 at 22.48.15_0dfefecf.jpg" alt="movie">
+                            <span>Honest thief</span>
                         </a>
                     </div>
                 </div>
@@ -169,33 +200,33 @@
                 </div>
                 <div class="albums">
                     <div class="movie">
-                        <a href="" target="_blank">
-                            <img src="images/IMG-20240430-WA0198.jpg" alt="">
-                            <span>movie</span>
+                        <a href="show-1.html" target="_blank">
+                            <img src="images/IMG-20240430-WA0198.jpg" alt="movie">
+                            <span>El khaliya</span>
                         </a>
                     </div>
                     <div class="movie">
-                        <a href="" target="_blank">
-                            <img src="images/IMG-20240430-WA0193.jpg" alt="">
-                            <span>movie</span>
+                        <a href="show-1.html" target="_blank">
+                            <img src="images/IMG-20240430-WA0193.jpg" alt="movie">
+                            <span>Al gaheem</span>
                         </a>
                     </div>
                     <div class="movie">
-                        <a href="" target="_blank">
-                            <img src="images/IMG-20240430-WA0198.jpg" alt="">
-                            <span>movie</span>
+                        <a href="show-1.html" target="_blank">
+                            <img src="images/IMG-20240430-WA0197.jpg" alt="movie">
+                            <span>El amaliya</span>
                         </a>
                     </div>
                     <div class="movie">
-                        <a href="h" target="_blank">
-                            <img src="images/IMG-20240430-WA0201.jpg" alt="">
-                            <span>movie</span>
+                        <a href="show-1.html" target="_blank">
+                            <img src="images/IMG-20240430-WA0190.jpg" alt="movie">
+                            <span>Men 30 sana</span>
                         </a>
                     </div>
                     <div class="movie">
-                        <a href="" target="_blank">
-                            <img src="images/IMG-20240430-WA0190.jpg" alt="">
-                            <span>movie</span>
+                        <a href="show-1.html" target="_blank">
+                            <img src="images/تيتو.jpeg" alt="movie">
+                            <span>Tito</span>
                         </a>
                     </div>
                 </div>
@@ -203,34 +234,34 @@
             <div class="row">
                 <div class="albums">
                     <div class="movie">
-                        <a href="" target="_blank">
-                            <img src="images/IMG-20240430-WA0195.jpg" alt="">
-                            <span>movie</span>
+                        <a href="show-1.html" target="_blank">
+                            <img src="images/IMG-20240430-WA0195.jpg" alt="movie">
+                            <span>Sakr elmokhabarat</span>
                         </a>
                     </div>
                     <div class="movie">
-                        <a href="" target="_blank">
-                            <img src="images/IMG-20240430-WA0189.jpg" alt="">
-                            <span>movie</span>
+                        <a href="show-1.html" target="_blank">
+                            <img src="images/IMG-20240430-WA0199.jpg" alt="movie">
+                            <span>Childern's Rezq</span>
                         </a>
                     </div>
                     <div class="movie">
-                        <a href="" target="_blank">
+                        <a href="show-1.html" target="_blank">
+                            <img src="images/IMG-20240430-WA0189.jpg" alt="movie">
+                            <span>Les baghdad</span>
+                        </a>
+                    </div>
+                    <div class="movie">
+                        <a href="show-1.html" target="_blank">
                             <img
-                                src="images/IMG-20240430-WA0190.jpg">
-                            <span>movie</span>
+                                src="images/العارف.jpg" alt="movie">
+                            <span>El aref</span>
                         </a>
                     </div>
                     <div class="movie">
-                        <a href="" target="_blank">
-                            <img src="images/IMG-20240430-WA0194.jpg" alt="">
-                            <span>movie</span>
-                        </a>
-                    </div>
-                    <div class="movie">
-                        <a href="" target="_blank">
-                            <img src="images/IMG-20240430-WA0199.jpg" alt="">
-                            <span>movie</span>
+                        <a href="show-1.html" target="_blank">
+                            <img src="images/المصلحة.jpeg" alt="movie">
+                            <span>El maslaha</span>
                         </a>
                     </div>
                 </div>
