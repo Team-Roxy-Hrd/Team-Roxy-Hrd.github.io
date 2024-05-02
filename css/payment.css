@@ -17,7 +17,7 @@ header{
 }
 
 .container{
-    background: rgb(220, 200, 164);
+    background: rgb(164, 197, 220, 0.8);
     max-width: 800px;
     min-height: 500px;
     display: flex;
