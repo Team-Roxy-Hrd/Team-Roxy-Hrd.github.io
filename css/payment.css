@@ -6,14 +6,27 @@
 }
 
 header{
-    width: 100vw;
-    min-height: 100vh;
     background: #34495e;
     font-size: 1.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background: url(../pictures/105.jpg) no-repeat ;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background: #34495e;
+    font-size: 1.2rem;
+    align-items: center;
+    background: url(../pictures/105.jpg) no-repeat;
 }
 
 .container{
