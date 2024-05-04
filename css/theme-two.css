@@ -17,7 +17,6 @@ button{
     border: none;
 }
 .nav-bar{
-    height: 40px;
     z-index: 2;
     border-bottom: 3px solid white;
     display: flex;
