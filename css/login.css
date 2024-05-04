@@ -86,7 +86,8 @@ a:link{
 }
 
 .btn:first-of-type:hover {
-    background-color: blue;
+    background-color: #1f5523;
+    font-size: 18px;
 }
 
 .btn {
@@ -102,7 +103,8 @@ a:link{
 }
 
 .btn:hover {
-    background-color: red;
+    background-color: #232121;
+    font-size: 18px;
 }
 
 .name_error,
