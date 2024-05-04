@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="css/theme-one.css">   
+    <link id="themeLink" rel="stylesheet" type="text/css" href="css/theme-one.css">
 </head>
 <body>
     <header>
@@ -13,19 +16,23 @@
             <div class="nav-bar-left">
                 <a href="#" class="logo"><span>R</span>OXY <span>H</span>RD</a>
             </div>
-            <div class="nav-bar-center">
-                <a href="#">Home</a>
+            <div class="menu">
+                <button id="open" onclick="menu_op()"><i class="fa-solid fa-bars"></i></button>
+                <button id="close" onclick="menu_cl()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div id="menu" class="nav-bar-center">
+                <a href="index.html">Home</a>
                 <select id="movieSelect" name="Movies" class="movies" onchange="location = this.value;">
                     <option hidden selected >Movies</option>
                     <option value="horor.html">horror</option>
                     <option value="action.html">action</option>
                     <option value="comedypage.html">comedy</option>
-                    <option value="drama.html">Drama</option>
+                    <option value="drama.html">drama</option>
                 </select>
                 <a href="tv-shows.html" >Tv Shows</a>
                 <a href="anime.html" >Anime</a>
                 <a href="payment.html" >payment</a>
-                <a href="feedback.html">Feedback</a>
+                <a href="feedback.html" >feedback</a>
                 <a href="table project.html" >About us?</a>
             </div>
             <div class="nav-bar-right">
@@ -41,21 +48,22 @@
         <form action="" id="loginForm" method="post">
            <h2>Login</h2>
            <div>
-            <label for="name">User Name</label>
-            <input type="text" id="loginUsername" name="name" placeholder="enter user name" autofocus ></div>
+            <label style="color: black;" for="name">User Name</label>
+            <input style="color: black;" type="text" id="loginUsername" name="name" placeholder="enter user name" autofocus ></div>
            <div class="name_error">please fill up your name</div>
-            <label for="password">Password</label>
-            <input type="password" id="loginPassword" name="password" placeholder="enter valid password">
-            <div class="pass_error">please fill up your password</div>
+            <label style="color: black;" for="password">Password</label>
+            <input style="color: black;" type="password" id="loginPassword" name="password" placeholder="enter valid password">
+            <div  class="pass_error">please fill up your password</div>
             <div class="pass_length_error">Password must be at least 8 characters long</div>
             <div class="success_message">Form submitted successfully!</div>
            <div class="sign">
             <a href="sign_up.html"> Go to register</a>
            </div>
-            <button type="submit">Login</button>
-            <button type="reset">Clear</button>
+            <button class="btn" type="submit">Login</button>
+            <button class="btn" type="reset">Clear</button>
         </form>
     </div>
+    
     <script src="java-script/login.js"></script>
     <script src="java-script/theme-select.js"></script>
     <script src="java-script/menu.js"></script>
