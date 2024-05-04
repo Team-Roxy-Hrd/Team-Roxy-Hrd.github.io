@@ -1,28 +1,8 @@
-function menu_op(){
-    document.getElementById('menu').style.display = 'flex'
-    document.getElementById('open').style.display = 'none'
-    document.getElementById('close').style.display = 'inline'
-};
-function menu_cl(){
-    document.getElementById('menu').style.display = 'none'
-    document.getElementById('open').style.display = 'inline'
-    document.getElementById('close').style.display = 'none'
-};
 
-function changetheme(){
-    const replacer = document.getElementById('replacer').value;
-    const style = document.getElementById('style');
-    if (replacer === 'theme2'){
-        style.href = '';
-    }
-    else{
-        style.href = 'comedystyle.css';
-    }
-}
 
 function okay(films){
     if(confirm("Do you want to watch the film?")){
-        window.open("../show-1.html","_blank","","");
+        window.open("show-1.html","_blank","","");
     }
     else{
         console.log("Select a film");
@@ -30,7 +10,7 @@ function okay(films){
 }
 function film(){
     if(confirm("Do you want to watch the film?")){
-        window.open("../show-1.html","_blank","","");
+        window.open("show-1.html","_blank","","");
     }
     else{
         console.log("Select a film");
