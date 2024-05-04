@@ -128,16 +128,16 @@ footer{
     text-align: center;
 }
 footer .logo{
-    width: 80%;
+    width: 100%;
     font-size: xx-large;
     display: flex;
     justify-content: center;
     gap: 50px;
     padding: 0 0 10px 0;
-    margin: 20px 10%;
     position: absolute;
     left: 0;
     border-bottom: 3px solid red;
+    background-color: black;
 }
 footer .logo i:hover{
     scale: 1.1;
