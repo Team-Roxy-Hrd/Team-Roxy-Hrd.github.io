@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment</title>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link id="themeLink" rel="stylesheet" type="text/css" href="css/theme-one.css">
     <link rel="stylesheet" href="css/payment.css">
+    <link id="themeLink" rel="stylesheet" type="text/css" href="css/theme-one.css">
 </head>
-    <body>
+<body>
     <header>
         <main class="nav-bar">
             <div class="nav-bar-left">
@@ -21,7 +21,7 @@
                 <button id="close" onclick="menu_cl()"><i class="fa-solid fa-xmark"></i></button>
             </div>
             <div id="menu" class="nav-bar-center">
-                <a href="#">Home</a>
+                <a href="index.html">Home</a>
                 <select id="movieSelect" name="Movies" class="movies" onchange="location = this.value;">
                     <option hidden selected >Movies</option>
                     <option value="horor.html">horror</option>
@@ -42,13 +42,13 @@
                 </select>
                 <a href="login.html"><button class="log-in">log in</button></a>
             </div>
-        </main> 
+        </main>
     </header>
     <section class="content">
-        <div class="container">
+        <div class="container" style="margin-bottom: 30px;">
             <div class="left">
                 <h3>BILLING ADDRESS</h3>
-                <form id="paymentForm" onsubmit="return validateForm()">
+                <form style="color: white;" id="paymentForm" onsubmit="return validateForm()">
                     Full name
                     <input type="text" name="full_name" placeholder="Enter name">
                     Email
@@ -58,7 +58,8 @@
                     City
                     <input type="text" name="city" placeholder="Enter city">
                     <div id="zip">
-                        <label>
+                                                <label style="color: white;">
+
                             State
                             <select name="state">
                                 <option>Choose State..</option>
@@ -69,7 +70,8 @@
                                 <option>Palestine</option>
                             </select>
                         </label>
-                        <label>
+                                                <label style="color: white;">
+
                             Zip code
                             <input type="number" name="zip_code" placeholder="Zip code">
                         </label>
@@ -78,7 +80,7 @@
             </div>
             <div class="right">
                 <h3>PAYMENT</h3>
-                <form>
+                <form style="color: white;">
                     Accepted Cards<br>
                     <img src="pictures/104.jpg" width="80">
                     <img src="pictures/106.jpg" width="80">
@@ -88,7 +90,8 @@
                     Exp month
                     <input type="text" name="exp_month" placeholder="Enter month">
                     <div id="zip">
-                        <label>
+                                                <label style="color: white;">
+
                             Exp year
                             <select name="exp_year">
                                 <option>Choose Year..</option>
@@ -102,17 +105,17 @@
                                 <option>2029</option>
                             </select>
                         </label>
-                        <label>
+                        <label style="color: white;">
                             CVV
                             <input type="number" name="cvv" placeholder="CVV">
                         </label>
                     </div>
-                    <button onclick="validateBothForms()">Submit</button>
+                    <button class="btn" onclick="validateBothForms()">Submit</button>
                 </form>
             </div>
         </div>
     </section>
-     <footer>
+    <footer>
         <div class="logo">
             <a href="https://www.facebook.com/people/%C4%8E%C4%A9v%C4%83%C4%8F-%C4%98m%C3%A4%C4%8F/pfbid02smR9NxDPg15fyXKip2mDtdYhqfW9dx54qWMgMaAkUsc1CtwRcwZHJvscfRFTJkJhl/"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
@@ -128,7 +131,6 @@
     </footer>
     <script src="java-script/payment.js"></script>
     <script src="java-script/theme-select.js"></script>
-    <script src="java-script/menu.js"></script>    
+    <script src="java-script/menu.js"></script>
 </body>
-
 </html>
