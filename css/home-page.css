@@ -15,192 +15,6 @@
     background-size: cover;
 }
 
-.nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 999;
-    width: 100%;
-}
-    
-
-.nav-bar-left {
-    margin-left: 30px;
-}
-
-.nav-bar-left a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: 700;
-}
-
-.nav-bar-left a span {
-     color: #21c72e; 
-
-}
-
-.nav-bar-left a:hover {
-    font-size: 35px;
-    transition: 0.9s;
-}
-
-.nav-bar-center a {
-    margin-left: 25px;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}
-
-.nav-bar-center .movies {
-    background: none;
-    text-decoration: none;
-    border: none;
-    margin-left: 25px;
-    color: white;
-    font-size: 20px;
-}
-
-.nav-bar-center .movies option {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: black;
-    font-size: 20px;
-}
-
-.nav-bar-center .movies:hover {
-    color:white;
-    font-size: 28px;
-    transition: 0.7s;
-}
-
-.nav-bar-center a:hover{
-    color: ;
-    font-size: 28px;
-    transition: 0.7s;
-}
-
-.nav-bar-right {
-    margin-right: 40px;
-    display: flex;
-    align-items: center ;
-    justify-content: center;
-}
-
-
-.nav-bar-right span {
-    font-size: 33px;
-    margin-right: 14px;
-    color:#fff;
-    cursor: pointer;
-    }
-
-.material-symbols-outlined {
-font-variation-settings:
-'FILL' 0,
-'wght' 400,
-'GRAD' 0,
-'opsz' 24;
-font-size: 30px;
-margin-top: 10px;
-}    
-
-.th {
-    background: none;
-    color: #000;
-    margin-right: 14px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: 0.4s;
-    /* border-radius: 30px; */
-    background-color: white;
-}
-
-.th:hover {
-    color: #fff;
-    background-color: #1cea2c;
-}
-
-.nav-bar-right button {
-    background: none;
-    border: none;
-    padding: 15px;
-    font-size: 15px;
-    width: 140px;
-    color: #fff;
-    border-radius: 30px;
-    border: 3px solid #21c72e;    
-    transition: 0.4s;
-    cursor: pointer;
-    font-weight: 700;
-}
-
-.nav-bar-right button:hover {
-    background-color: #21c72e;
-    border-color: #21c72e;
-    font-size: 17px;
-
-
-}
-
-.search-container {
-    display: flex;
-    justify-content: center;
-}
-
-.search {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 35%;
-}
-
-.search-results {
-    display: none; */
-    display: inline-block;
-    margin-top: 125px;
-    background-color: white;
-    width: 35%;
-    margin-left: 495px;
-    height: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-.search-results.show {
-    display: block;
-}
-
-.search-result {
-    background-color: #fff;
-    padding: 2px;
-    margin: 16px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-left: 27px;
-}
-
-.search-result:hover {
-    color: #a52c08;
-}
-
-.search-result img {
-    width: 100px;
-    height: 150px;
-    margin-bottom: 10px;
-}
-
-.search-result h3 {
-    margin-top: 0;
-}
-
-.search-result p {
-    margin-bottom: 0;
-}
-
-
-
 .center {
     padding: 200px 30px;
 }
@@ -266,6 +80,63 @@ margin-top: 10px;
     background-position: right top;
     background-repeat: no-repeat;
 }
+
+.search-container {
+    display: flex;
+    justify-content: center;
+}
+
+.search {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 35%;
+}
+
+.search-results {
+    display: none;
+    display: inline-block;
+    margin-top: 125px;
+    background-color: white;
+    width: 35%;
+    margin-left: 495px;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.search-results.show {
+    display: block;
+}
+
+.search-result {
+    background-color: #fff;
+    padding: 2px;
+    margin: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 27px;
+}
+
+.search-result:hover {
+    color: #a52c08;
+}
+
+.search-result img {
+    width: 100px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.search-result h3 {
+    margin-top: 0;
+}
+
+.search-result p {
+    margin-bottom: 0;
+} 
 
 .title {
     width: 100%;
@@ -650,7 +521,7 @@ table tr:nth-child(even) {
     color: #fff;
 }
 
-footer {
+/* footer {
     background-image: url(../pictures/footer_bg.jpg);
     text-align: center;
     max-height: 100px;
@@ -661,4 +532,4 @@ footer p a {
     cursor: pointer;
     text-decoration: none;
     color: white;
-}
+} */
