@@ -4,32 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="css/horor.css">
 <link
      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@400..800&display=swap" 
      rel="stylesheet">
      <link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Movie Design</title>
+    <link id="themeLink" rel="stylesheet" type="text/css" href="css/theme-one.css">
 </head>
 <body>
-    <div class="navbar">
-        <div class="navbar-container">
-            <div class="logo-container"><h1 class="logo">ROXY</h1></div>
-            <div class="menu-container">
-                <ul class="menu-list">
-                    <li class="menu-list-item active">Home</li>
-                    <li class="menu-list-item"> Horrer Movies</li>
-                    <li class="menu-list-item">Action</li>
-                    <li class="menu-list-item">Popular</li>
-                    <li class="menu-list-item">Top</li>    
-                </ul>
+   <header style=" background-color: rgb(20,20,20);
+   height: 67px;">
+        <main class="nav-bar">
+            <div class="nav-bar-left">
+                <a href="#" class="logo"><span>R</span>OXY <span>H</span>RD</a>
             </div>
-            <div class="search-container">
-                <input type="search" class="search" id="searchInput" placeholder=" Search About Movies......">
-                <div id="searchResults" class="search-results"></div>
+            <div class="menu">
+                <button id="open" onclick="menu_op()"><i class="fa-solid fa-bars"></i></button>
+                <button id="close" onclick="menu_cl()"><i class="fa-solid fa-xmark"></i></button>
             </div>
+            <div id="menu" class="nav-bar-center">
+                <a href="#">Home</a>
+                <select id="movieSelect" name="Movies" class="movies" onchange="location = this.value;">
+                    <option hidden selected >Movies</option>
+                    <option value="horor.html">horror</option>
+                    <option value="action.html">action</option>
+                    <option value="comedypage.html">comedy</option>
+                    <option value="drama.html">Drama</option>
+                </select>
+                <a href="tv-shows.html" >Tv Shows</a>
+                <a href="anime.html" >Anime</a>
+                <a href="payment.html" >payment</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="table project.html" >About us?</a>
+            </div>
+            <div class="nav-bar-right">
+                <select id="themeSelect" class="th" onchange="changeTheme()">
+                    <option value="css/theme-one.css">Th-1</option>
+                    <option value="css/theme-two.css">Th-2</option>
+                </select>
+                <a href="login.html"><button class="log-in">log in</button></a>
+            </div>
+        </main>
+        <div class="search-container">
+            <input type="search" class="search" id="searchInput" placeholder=" Search About Movies......">
+            <div id="searchResults" class="search-results"></div>
         </div>
-    </div>
+   </header>
     <div class="container">
         <div class="content-container">
           <div class="featured-content"
@@ -45,7 +69,7 @@
                     <img  class="movie-list-item-img" src="pictures/50.jpg" alt="">
                     <span class="movie-list-item-title">Insidious</span>
 
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                          
@@ -53,28 +77,28 @@
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/12.jpg" alt="">
                     <span class="movie-list-item-title">El Joker</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/33.jpg" alt="">
                     <span class="movie-list-item-title">Death Whisperer</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/34.jpg" alt="">
                     <span class="movie-list-item-title">Sinister</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/35.jpg" alt="">
                     <span class="movie-list-item-title">The Pyramid</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
@@ -89,35 +113,35 @@
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/16.jpg" alt="">
                     <span class="movie-list-item-title">Batman</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                          </div>
                 <div class="movie-list-item">
                      <img  class="movie-list-item-img" src="pictures/37.jpg" alt="">
                      <span class="movie-list-item-title">The Purge</span>
-                     <a href="show-1.html">
+                     <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
                 <div class="movie-list-item">
                      <img  class="movie-list-item-img" src="pictures/38.jpg" alt="">
                      <span class="movie-list-item-title">Zombieland 2</span>
-                     <a href="show-1.html">
+                     <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                                </div>
                  <div class="movie-list-item">
                         <img  class="movie-list-item-img" src="pictures/56.jpg" alt="">
                          <span class="movie-list-item-title">From Dusk Till Dawn</span>
-                         <a href="show-1.html">
+                         <a href="show 1.html">
                             <button class="movie-list-item-button">Watch</button>
                         </a>
                             </div>
                     <div class="movie-list-item">
                             <img  class="movie-list-item-img" src="pictures/72.jpg" alt="">
                             <span class="movie-list-item-title">You Are Not My Mother</span>
-                            <a href="show-1.html">
+                            <a href="show 1.html">
                                 <button class="movie-list-item-button">Watch</button>
                             </a>
                   </div>
@@ -133,49 +157,49 @@
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/11.jpg" alt="">
                     <span class="movie-list-item-title">SpiderMan</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/52.jpg" alt="">
                     <span class="movie-list-item-title">World War Z</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/53.jpg" alt="">
                     <span class="movie-list-item-title">Underworld: Awakening</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/54.jpg" alt="">
                     <span class="movie-list-item-title">Resident Evil: The Final Chapter</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/55.jpg" alt="">
                     <span class="movie-list-item-title">Blade</span>             
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>               
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/57.jpg" alt="">
                     <span class="movie-list-item-title">The Purge: Anarchy</span>                    
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/58.jpg" alt="">
                     <span class="movie-list-item-title">I Am Legend</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                       </div>
@@ -193,14 +217,14 @@
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/59.jpg" alt="">
                     <span class="movie-list-item-title">American Psycho</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/60.jpg" alt="">
                     <span class="movie-list-item-title">Warm Bodies</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <a href="show 1.html">
                             <button class="movie-list-item-button">Watch</button>
                         </a>
@@ -209,7 +233,7 @@
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/61.jpg" alt="">
                     <span class="movie-list-item-title">Little Monsters</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <a href="show 1.html">
                             <button class="movie-list-item-button">Watch</button>
                         </a>
@@ -218,35 +242,35 @@
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/62.jpg" alt="">
                     <span class="movie-list-item-title">Jennifer's Body</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/63.jpg" alt="">
                     <span class="movie-list-item-title">Haunted Mansion</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/64.jpg" alt="">
                     <span class="movie-list-item-title">Happy Death Day 2U</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/65.jpg" alt="">
                     <span class="movie-list-item-title">Cult of Chucky</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/66.jpg" alt="">
                     <span class="movie-list-item-title">Hubie Halloween</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
@@ -260,49 +284,49 @@
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/67.jpg" alt="">
                     <span class="movie-list-item-title">Run Rabbit Run</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/68.jpg" alt="">
                     <span class="movie-list-item-title">Gothika</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/69.jpg" alt="">
                     <span class="movie-list-item-title">Ma</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/70.jpg" alt="">
                     <span class="movie-list-item-title">Creep</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/71.jpg" alt="">
                     <span class="movie-list-item-title">The Silence of the Lambs</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/73.jpg" alt="">
                     <span class="movie-list-item-title">Possum</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/74.jpg" alt="">
                     <span class="movie-list-item-title">Saint Maud</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
@@ -317,56 +341,56 @@
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/79.jpg" alt="">
                     <span class="movie-list-item-title">King Kong</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/76.jpg" alt="">
                     <span class="movie-list-item-title">No Way Up</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/77.jpg" alt="">
                     <span class="movie-list-item-title">Enemy</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/78.jpg" alt="">
                     <span class="movie-list-item-title">The Exorcist: Believer</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/75.jpg" alt="">
                     <span class="movie-list-item-title">Misery</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/80.jpg" alt="">
                     <span class="movie-list-item-title">The Conjuring 2</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/81.jpg" alt="">
                     <span class="movie-list-item-title">Identity</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>
                         </div>
                 <div class="movie-list-item">
                     <img  class="movie-list-item-img" src="pictures/82.jpg" alt="">
                     <span class="movie-list-item-title">Gretel & Hansel</span>
-                    <a href="show-1.html">
+                    <a href="show 1.html">
                         <button class="movie-list-item-button">Watch</button>
                     </a>    
                         </div>
@@ -376,6 +400,8 @@
         </div>
     </div>
                                     <!-- JavaScript link -->
-                                    <script src="java-script/horor.js"></script>
+                                    <script src="java-script/style.js"></script>
+                                    <script src="java-script/theme-select.js"></script>
+                                    <script src="java-script/menu.js"></script>
 </body>
 </html>
