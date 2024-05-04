@@ -129,7 +129,7 @@ font-variation-settings:
 
 
 footer {
-   background-image: url(../pictures/footer_bg.jpg);
+  background-image: url(../pictures/footer_bg.jpg);
     text-align: center;
     max-height: 100px;
     height: 100%;
@@ -137,6 +137,7 @@ footer {
     position: sticky;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
  }
 
 footer p a {
