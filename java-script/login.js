@@ -1,6 +1,6 @@
-document.getElementById("registrationForm").addEventListener("submit", function(event) {
-    var name = document.getElementById("name").value;
-    var password = document.getElementById("password").value;
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    var name = document.getElementById("loginUsername").value;
+    var password = document.getElementById("loginPassword").value;
     var nameError = document.querySelector(".name_error");
     var passError = document.querySelector(".pass_error");
     var passLengthError = document.querySelector(".pass_length_error");
@@ -18,7 +18,7 @@ document.getElementById("registrationForm").addEventListener("submit", function(
         passError.style.display = "block";
         passLengthError.style.display = "none";
         valid = false;
-    } else if (password.length < 8) {
+    } else if (password.length < 3) {
         passError.style.display = "none";
         passLengthError.style.display = "block";
         valid = false;
@@ -28,12 +28,25 @@ document.getElementById("registrationForm").addEventListener("submit", function(
     }
 
     if (valid) {
-        successMessage.style.display = "block"; 
         event.preventDefault(); 
+        var savedUsername = localStorage.getItem('username');
+        var savedPassword = localStorage.getItem('password');
+
+        if (name === savedUsername && password === savedPassword) {
+            successMessage.style.display = "block"; 
+            setTimeout(function() {
+                window.location.href = "index.html";       
+            }, 2000);
+        }
     } else {
         event.preventDefault(); 
     }
 });
 
+var savedUsername = localStorage.getItem('username');
+var savedPassword = localStorage.getItem('password');
 
-
+if (savedUsername && savedPassword) {
+    document.getElementById('loginUsername').value = savedUsername;
+    document.getElementById('loginPassword').value = savedPassword;
+}
