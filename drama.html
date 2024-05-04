@@ -4,9 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drama</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="drama.css">
+    <link id="themeLink" rel="stylesheet" type="text/css" href="css/theme-one.css">
 </head>
 <body>
+    <header>
+        <main class="nav-bar">
+            <div class="nav-bar-left">
+                <a href="#" class="logo"><span>R</span>OXY <span>H</span>RD</a>
+            </div>
+            <div class="menu">
+                <button id="open" onclick="menu_op()"><i class="fa-solid fa-bars"></i></button>
+                <button id="close" onclick="menu_cl()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div id="menu" class="nav-bar-center">
+                <a href="#">Home</a>
+                <select id="movieSelect" name="Movies" class="movies" onchange="location = this.value;">
+                    <option hidden selected >Movies</option>
+                    <option value="horor.html">horror</option>
+                    <option value="action.html">action</option>
+                    <option value="comedypage.html">comedy</option>
+                    <option value="drama.html">drama</option>
+                </select>
+                <a href="tv-shows.html" >Tv Shows</a>
+                <a href="anime.html" >Anime</a>
+                <a href="payment.html" >payment</a>
+                <a href="feedback.html" >feedback</a>
+                <a href="table project.html" >About us?</a>
+            </div>
+            <div class="nav-bar-right">
+                <select id="themeSelect" class="th" onchange="changeTheme()">
+                    <option value="css/theme-one.css">Th-1</option>
+                    <option value="css/theme-two.css">Th-2</option>
+                </select>
+                <a href="login.html"><button class="log-in">log in</button></a>
+            </div>
+        </main>
+    </header>
    <section class="body">
         <div class="body2">
             <div class="mainPage">
@@ -16,7 +53,6 @@
                             
                                 <div>
                                     <h1> Drama Films</h1>
-                                    <i class="fa fa-search"></i>
                                     <input type="text" id="search" placeholder="Search..." class="search">
                                 </div>
 
@@ -25,10 +61,10 @@
                             </div>
               
                             
-                            <div class="movies">   
+                            <div class="moviess">   
                                 <div class="m">
                                     <img src="pictures/11.11.jpg" alt="">
-                                    <a href="show-1.html" target="_blank">
+                                    <a href="show-1.html" target="_blank" class="a">
                                         <button id="over" >play</button>            
                                     </a>
                                     <h4>11.11</h4>
@@ -36,7 +72,7 @@
                                 </div>
                                 <div class="m">
                                     <img src="pictures/الجريمه.jpeg" alt="">
-                                    <a href="show-1.html" target="_blank">
+                                    <a href="show-1.html" target="_blank" class="a">
                                         <button id="ver">play</button>       
                                     </a>
                                     <h4>el grema</h4>
@@ -44,7 +80,7 @@
                                 </div>
                                 <div class="m">
                                     <img src="pictures/بيت الروابي.jpeg" alt="">
-                                    <a href="show-1.html" target="_blank">
+                                    <a href="show-1.html" target="_blank" class="a">
                                         <button>play</button>
                                     </a>
                                     <h4>bet el rwaby</h4>
@@ -52,7 +88,7 @@
                                 </div>
                                 <div class="m">
                                     <img src="pictures/حمله فرعون.jpeg" alt="">
-                                    <a href="show-1.html" target="_blank">
+                                    <a href="show-1.html" target="_blank" class="a">
                                         <button>play</button>
                                     </a>
                                     <h4>hamlt feron</h4>
@@ -60,7 +96,7 @@
                                 </div>
                                 <div class="m">
                                     <img src="pictures/صاحب المقام.jpeg" alt="">
-                                    <a href="show-1.html" target="_blank">
+                                    <a href="show-1.html" target="_blank" class="a">
                                         <button>play</button>
                                     </a>
                                     <h4>sahb elmakam</h4>
@@ -68,7 +104,7 @@
                                 </div>
                                 <div class="m">
                                     <img src="pictures/لعبه شيطان.jpg" alt="">
-                                    <a href="show-1.html" target="_blank">
+                                    <a href="show-1.html" target="_blank" class="a">
                                         <button>play</button>
                                     </a>
                                     <h4>lebt shetan</h4>
@@ -83,10 +119,10 @@
                             <div>
                                 <h2>Most known</h2>
                             </div>
-                            <div class="movies">
+                            <div class="moviess">
                                 <div class="m">
                                     <img src="pictures/عقده الخواجه.jpeg" alt="">
-                                    <a href="show-1.html" target="_blank">
+                                    <a href="show-1.html" target="_blank" class="a">
                                         <button>play</button>
                                     </a>
                                     <h4>okdt khwaga</h4>
@@ -94,7 +130,7 @@
                                 </div>
                                 <div class="m">
                                     <img src="pictures/فارس.jpeg" alt="">
-                                    <a href="show-1.html" target="_blank">
+                                    <a href="show-1.html" target="_blank" class="a">
                                         <button>play</button>
                                     </a>
                                     <h4>fares</h4>
@@ -102,7 +138,7 @@
                                 </div>
                                 <div class="m">
                                     <img src="pictures/صندوق الدنيا.jpeg" alt="">
-                                    <a href="show-1.html" target="_blank">
+                                    <a href="show-1.html" target="_blank" class="a">
                                         <button>play</button>
                                     </a>
                                     <h4>sandok eldonia</h4>
@@ -110,7 +146,7 @@
                                 </div>
                                 <div class="m">
                                     <img src="pictures/المحكمه.jpeg" alt="">
-                                    <a href="show-1.html" target="_blank">
+                                    <a href="show-1.html" target="_blank" class="a">
                                         <button>play</button>
                                     </a>
                                     <h4>elmahkma</h4>
@@ -118,7 +154,7 @@
                                 </div>
                                 <div class="m">
                                     <img src="pictures/بحبك.jpeg" alt="">
-                                    <a href="show-1.html" target="_blank">
+                                    <a href="show-1.html" target="_blank" class="a">
                                         <button>play</button>
                                     </a>
                                     <h4>bahbk</h4>
@@ -126,7 +162,7 @@
                                 </div>
                                 <div class="m">
                                     <img src="pictures/الصندوق الاسود.jpeg" alt="">
-                                    <a href="show-1.html" target="_blank">
+                                    <a href="show-1.html" target="_blank" class="a">
                                         <button>play</button>
                                     </a>
                                     <h4>sandok elaswd</h4>
@@ -141,10 +177,10 @@
                             <div>
                                 <h2>English Films</h2>
                             </div>
-                            <div class="movies">
+                            <div class="moviess">
                                 <div class="m">
                                     <img src="pictures/mongol.jpeg" alt="">
-                                    <a href="show-1.html" target="_blank">
+                                    <a href="show-1.html" target="_blank" class="a">
                                         <button>play</button>
                                     </a>
                                     <h4>mongol</h4>
@@ -152,7 +188,7 @@
                                 </div>
                                 <div class="m">
                                     <img src="pictures/planet of the sharks.jpeg" alt="">
-                                    <a href="show-1.html" target="_blank">
+                                    <a href="show-1.html" target="_blank" class="a">
                                         <button>play</button>
                                     </a>
                                     <h4>planet of the sharks</h4>
@@ -160,7 +196,7 @@
                                 </div>
                                 <div class="m">
                                     <img src="pictures/one day.jpeg" alt="">
-                                    <a href="show-1.html" target="_blank">
+                                    <a href="show-1.html" target="_blank" class="a">
                                         <button>play</button>
                                     </a>
                                     <h4>one day</h4>
@@ -168,7 +204,7 @@
                                 </div>
                                 <div class="m">
                                     <img src="pictures/perfect strangers.jpeg" alt="">
-                                    <a href="show-1.html" target="_blank">
+                                    <a href="show-1.html" target="_blank" class="a">
                                         <button>play</button>
                                     </a>
                                     <h4>perfect strangers</h4>
@@ -176,7 +212,7 @@
                                 </div>
                                 <div class="m">
                                     <img src="pictures/nancy drew.jpeg" alt="">
-                                    <a href="show-1.html" target="_blank">
+                                    <a href="show-1.html" target="_blank" class="a">
                                         <button>play</button>
                                     </a>
                                     <h4>nancy drew</h4>
@@ -184,7 +220,7 @@
                                 </div>
                                 <div class="m">
                                     <img src="pictures/morbius.jpeg" alt="">
-                                    <a href="show-1.html" target="_blank">
+                                    <a href="show-1.html" target="_blank" class="a">
                                     <button>play</button>
                                 </a>
                                     <h4>morbius</h4>
@@ -199,10 +235,10 @@
                             <div>
                                 <h2>Turkey</h2>
                             </div>
-                            <div class="movies">
+                            <div class="moviess">
                                 <div class="m">
                                     <img src="pictures/49.jpeg" alt="">
-                                    <a href="show-1.html" target="_blank">
+                                    <a href="show-1.html" target="_blank" class="a">
                                     <button>play</button>
                                 </a>
                                     <h4>49</h4>
@@ -210,7 +246,7 @@
                                 </div>
                                 <div class="m">
                                 <img src="pictures/in your dream.jpeg" alt="">
-                                <a href="show-1.html" target="_blank">
+                                <a href="show-1.html" target="_blank" class="a">
                                 <button>play</button>
                                 </a>                                    
                                     <h4>in your dream</h4>
@@ -218,7 +254,7 @@
                                 </div>
                                 <div class="m">
                                     <img src="pictures/Killers-of-the-Flower-Moon.jpg" alt="">
-                                    <a href="show-1.html" target="_blank">
+                                    <a href="show-1.html" target="_blank" class="a">
                                     <button>play</button>
                                     </a>                                        
                                     <h4>Killers-of-the-Flower-Moon</h4>
@@ -226,7 +262,7 @@
                                 </div>
                                 <div class="m">
                                     <img src="pictures/last call istanbul.jpg" alt="">
-                                    <a href="show-1.html" target="_blank">
+                                    <a href="show-1.html" target="_blank" class="a">
                                     <button>play</button>
                                     </a>                                        
                                     <h4>last call istanbul</h4>
@@ -234,7 +270,7 @@
                                 </div>
                                 <div class="m">
                                     <img src="pictures/روح الحب و الصراع.jpg" alt="">
-                                    <a href="show-1.html" target="_blank">
+                                    <a href="show-1.html" target="_blank" class="a">
                                     <button>play</button>
                                     </a>
                                     <h4>aaahh blinda</h4>
@@ -242,7 +278,7 @@
                                 </div>
                                 <div class="m">
                                     <img src="pictures/aman called otto.avif" alt="">
-                                    <a href="show-1.html" target="_blank">
+                                    <a href="show-1.html" target="_blank" class="a">
                                         <button>play</button>
                                     </a>
                                     <h4>a man called otto</h4>
@@ -257,6 +293,22 @@
             </div>        
         </div>
 </section>
+<footer>
+    <div class="logo">
+        <a href="https://www.facebook.com/people/%C4%8E%C4%A9v%C4%83%C4%8F-%C4%98m%C3%A4%C4%8F/pfbid02smR9NxDPg15fyXKip2mDtdYhqfW9dx54qWMgMaAkUsc1CtwRcwZHJvscfRFTJkJhl/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.google-plus.com"><i class="fa-brands fa-google-plus"></i></a>
+        <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <p style="display: none;">&copy;copyRights, All rights reserved by <a style="display: none;" onclick="document.getElementById('team').style.display='inline-block'">Team Roxy HRD</a> </p>
+    <div class="copyright">
+        <p class="right"><span style="font-family: serif;">&copy;</span> all rights preserved for <span>R</span>oxy <span>H</span>RD</p> 
+        <p class="Thank">Thank you for choosing our site.</p>
+    </div>
+</footer>
+<script src="java-script/theme-select.js"></script>
+<script src="java-script/menu.js"></script>
 <script>
     const searchInput = document.getElementById('search');
     const movies = document.querySelectorAll('.m');
