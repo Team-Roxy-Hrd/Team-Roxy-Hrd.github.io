@@ -21,6 +21,7 @@ button{
     padding: 10px;
     position: relative;
     margin-bottom: 30px;
+    background-color: black;
 }
 .logo{
     font-size: xx-large;
