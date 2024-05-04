@@ -4,45 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/feedback.css"> 
+    <link id="themeLink" rel="stylesheet" type="text/css" href="css/theme-one.css">
+    <link rel="stylesheet" href="css/feedback.css">
 </head>
 <body>
+    <header>
+        <main class="nav-bar">
+            <div class="nav-bar-left">
+                <a href="#" class="logo"><span>R</span>OXY <span>H</span>RD</a>
+            </div>
+            <div class="menu">
+                <button id="open" onclick="menu_op()"><i class="fa-solid fa-bars"></i></button>
+                <button id="close" onclick="menu_cl()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div id="menu" class="nav-bar-center">
+                <a href="#">Home</a>
+                <select id="movieSelect" name="Movies" class="movies" onchange="location = this.value;">
+                    <option hidden selected >Movies</option>
+                    <option value="horor.html">horror</option>
+                    <option value="action.html">action</option>
+                    <option value="comedypage.html">comedy</option>
+                    <option value="drama.html">drama</option>
+                </select>
+                <a href="tv-shows.html" >Tv Shows</a>
+                <a href="anime.html" >Anime</a>
+                <a href="payment.html" >payment</a>
+                <a href="feedback.html" >feedback</a>
+                <a href="table project.html" >About us?</a>
+            </div>
+            <div class="nav-bar-right">
+                <select id="themeSelect" class="th" onchange="changeTheme()">
+                    <option value="css/theme-one.css">Th-1</option>
+                    <option value="css/theme-two.css">Th-2</option>
+                </select>
+                <a href="login.html"><button class="log-in">log in</button></a>
+            </div>
+        </main>
+    </header>
 
-<div class="container">
-    <h2>Feedback Form</h2>
-    <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
+    <div class="container">
+        <h2>Feedback Form</h2>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+        </div>
+        <button class="btn" onclick="submitFeedback()">Submit</button>
+        <div class="response" id="response"></div>
     </div>
-    <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-    </div>
-    <div class="form-group">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message"></textarea>
-    </div>
-    <button onclick="submitFeedback()">Submit</button>
-    <div class="response" id="response"></div>
-</div>
+    <footer>
+        <div class="logo">
+            <a href="https://www.facebook.com/people/%C4%8E%C4%A9v%C4%83%C4%8F-%C4%98m%C3%A4%C4%8F/pfbid02smR9NxDPg15fyXKip2mDtdYhqfW9dx54qWMgMaAkUsc1CtwRcwZHJvscfRFTJkJhl/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.google-plus.com"><i class="fa-brands fa-google-plus"></i></a>
+            <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <p style="display: none;">&copy;copyRights, All rights reserved by <a style="display: none;" onclick="document.getElementById('team').style.display='inline-block'">Team Roxy HRD</a> </p>
+        <div class="copyright">
+            <p class="right"><span style="font-family: serif;">&copy;</span> all rights preserved for <span>R</span>oxy <span>H</span>RD</p> 
+            <p class="Thank">Thank you for choosing our site.</p>
+        </div>
+    </footer>
+    <script src="java-script/theme-select.js"></script>
+    <script src="java-script/menu.js"></script>
+    <script>
+        function submitFeedback() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+            var response = document.getElementById('response');
 
-<script>
-    function submitFeedback() {
-        var name = document.getElementById('name').value;
-        var email = document.getElementById('email').value;
-        var message = document.getElementById('message').value;
-        var response = document.getElementById('response');
-
-        if (name === '' || email === '' || message === '') {
-            response.textContent = 'Please fill out all fields.';
-            response.style.color = 'red';
-        } else {
-            response.textContent = 'Feedback submitted successfully!';
-            response.style.color = 'green';
+            if (name === '' || email === '' || message === '') {
+                response.textContent = 'Please fill out all fields.';
+                response.style.color = 'red';
+            } else {
+                response.textContent = 'Feedback submitted successfully!';
+                response.style.color = 'green';
+            }
         }
-    }
-</script>
+    </script>
 
 </body>
 </html>
