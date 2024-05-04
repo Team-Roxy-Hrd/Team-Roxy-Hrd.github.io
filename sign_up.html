@@ -1,33 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="css/sign_up.css">
+    <link id="themeLink" rel="stylesheet" type="text/css" href="css/theme-one.css">    
 </head>
-
 <body>
+    <header>
+        <main class="nav-bar">
+            <div class="nav-bar-left">
+                <a href="#" class="logo"><span>R</span>OXY <span>H</span>RD</a>
+            </div>
+            <div class="menu">
+                <button id="open" onclick="menu_op()"><i class="fa-solid fa-bars"></i></button>
+                <button id="close" onclick="menu_cl()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div id="menu" class="nav-bar-center">
+                <a href="index.html">Home</a>
+                <select id="movieSelect" name="Movies" class="movies" onchange="location = this.value;">
+                    <option hidden selected >Movies</option>
+                    <option value="horor.html">horror</option>
+                    <option value="action.html">action</option>
+                    <option value="comedypage.html">comedy</option>
+                    <option value="drama.html">drama</option>
+                </select>
+                <a href="tv-shows.html" >Tv Shows</a>
+                <a href="anime.html" >Anime</a>
+                <a href="payment.html" >payment</a>
+                <a href="feedback.html" >feedback</a>
+                <a href="table project.html" >About us?</a>
+            </div>
+            <div class="nav-bar-right">
+                <select id="themeSelect" class="th" onchange="changeTheme()">
+                    <option value="css/theme-one.css">Th-1</option>
+                    <option value="css/theme-two.css">Th-2</option>
+                </select>
+                <a href="login.html"><button class="log-in">log in</button></a>
+            </div>
+        </main>
+    </header>
     <h1>Sign up</h1>
     <div class="container">
-        <h2>Fill out the following:</h2>
+        <h2 style="color: black;">Fill out the following:</h2>
         <form method="post" target="_blank" id="form" onsubmit="return signup(event)">
             <div>
                 <label for="username">Username :</label>
-                <input type="text" required name="username" autofocus id="username" class="username">
+                <input style="color: black;" type="text" required name="username" autofocus id="username" class="username">
             </div>
             <div>
                 <label for="email">Email :</label>
-                <input type="email" required name="email" id="email" class="email">
+                <input style="color: black;" type="email" required name="email" id="email" class="email">
             </div>
             <div>
-                <label for="password">Password :</label>
-                <input type="password" required name="password" minlength="3" id="password" class="pass">
+                <label for="password" >Password :</label>
+                <input style="color: black;" style="color: black;" type="password" required name="password" minlength="3" id="password" class="pass">
             </div>
             <div>
                 <label for="confirm">Confirm Password :</label>
-                <input type="password" required name="confirm_password" minlength="3" id="confirm" class="confirm"
+                <input style="color: black;" type="password" required name="confirm_password" minlength="3" id="confirm" class="confirm"
                     onkeyup="checkPassword()">
             </div>
             <div>
@@ -35,15 +70,15 @@
             </div>
             <div>
                 <label for="phone">Phone Number :</label>
-                <input type="tel" id="phone" name="phone" class="phone">
+                <input style="color: black;" type="tel" id="phone" name="phone" class="phone">
             </div>
             <div>
                 <label for="date">Your Birth Day :</label>
-                <input type="date" id="date" name="birth_day" class="birth">
+                <input style="color: black;" type="date" id="date" name="birth_day" class="birth">
             </div>
             <div>
                 <label for="country">Country of Residence:</label>
-                <input list="countrylist" name="country" class="country" id="country">
+                <input style="color: black;" list="countrylist" name="country" class="country" id="country">
                 <datalist id="countrylist">
                     <option value="brazil"></option>
                     <option value="canada"></option>
@@ -62,25 +97,25 @@
             </div>
             <div>
                 <label>Gender :</label>
-                <input type="radio" name="gender" value="male" id="male">
+                <input style="color: black;" type="radio" name="gender" value="male" id="male">
                 <label for="male">Male</label>
             </div>
             <div>
-                <input class="female" type="radio" name="gender" value="female" id="female">
+                <input style="color: black;" class="female" type="radio" name="gender" value="female" id="female">
                 <label for="female">Female</label>
             </div>
             <div>
                 <label>Nationality :</label>
-                <input type="radio" name="nationality" value="egyptian" class="input" id="egyptian">
+                <input style="color: black;" type="radio" name="nationality" value="egyptian" class="input" id="egyptian">
                 <label for="egyptian">Egyptian</label>
             </div>
             <div>
-                <input type="radio" name="nationality" value="foreign" class="foreign" id="foreign">
+                <input style="color: black;" type="radio" name="nationality" value="foreign" class="foreign" id="foreign">
                 <label for="foreign">Foreign</label>
             </div>
             <div>
                 <label>Your Favorite Movie Genre :</label>
-                <input type="checkbox" name="favourite_movie_genre" value="anime" id="anime">
+                <input style="color: black;" type="checkbox" name="favourite_movie_genre" value="anime" id="anime">
                 <label for="anime">Anime</label>
                 <div class="check">
                     <div>
@@ -106,12 +141,27 @@
                 </div>
             </div>
             <div>
-                <input type="reset" class="button">
-                <input type="submit" class="button">
+                <input style="color: black;" type="reset" class="button">
+                <input style="color: black;" type="submit" class="button">
             </div>
         </form>
     </div>
+    <script src="java-script/theme-select.js"></script>
+    <script src="java-script/menu.js"></script>
     <script>
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+        
+        localStorage.setItem('username', username);
+        localStorage.setItem('password', password);
+        
+        alert('تم إنشاء الحساب بنجاح!');
+        window.location.href = "login.html";       
+     });
+
         function signup(event) {
             event.preventDefault();
             let password = document.getElementById("password").value;
