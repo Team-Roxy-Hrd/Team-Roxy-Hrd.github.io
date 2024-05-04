@@ -46,6 +46,7 @@ h5{
     background-color: #a30101;
     outline: none;
     border: none;
+    margin-left: 82%;
 }
 .search-results {
     position: absolute;
