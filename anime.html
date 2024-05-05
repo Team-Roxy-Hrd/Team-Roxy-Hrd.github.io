@@ -13,6 +13,7 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
         crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link id="style" rel="stylesheet" href="css/anime.css">
+    <link id="themeLink" rel="stylesheet" type="text/css" href="css/theme-one.css">
 </head>
 <body>
     <header class="head">
@@ -25,25 +26,26 @@
                 <button id="close" onclick="menu_cl()"><i class="fa-solid fa-xmark"></i></button>
             </div>
             <div id="menu" class="nav-bar-center">
-                <a href="">Home</a>
-                <select name="Movies" class="movies" >
-                    <option hidden>films</option>
-                    <option><a href="">horror</a></option>
-                    <option><a href="">drama</a></option>
-                    <option><a href="">action</a></option>
-                    <option><a href="">comedy</a></option>
+                <a href="#">Home</a>
+                <select id="movieSelect" name="Movies" class="movies" onchange="location = this.value;">
+                    <option hidden selected >Movies</option>
+                    <option value="horor.html">horror</option>
+                    <option value="action.html">action</option>
+                    <option value="comedypage.html">comedy</option>
+                    <option value="drama.html">drama</option>
                 </select>
-                <a href="" >Tv Shows</a>
+                <a href="tv-shows.html" >Tv Shows</a>
                 <a href="anime.html" >Anime</a>
-                <a href="" >content with us</a>
-                <a href="" >About us?</a>
+                <a href="payment.html" >payment</a>
+                <a href="feedback.html" >feedback</a>
+                <a href="table project.html" >About us?</a>
             </div>
             <div class="nav-bar-right">
-                <select id="replacer" onchange="changetheme()" class="th">
-                    <option value="theme1">Th-1</option>
-                    <option value="theme2">Th-2</option>
+                <select id="themeSelect" class="th" onchange="changeTheme()">
+                    <option value="css/theme-one.css">Th-1</option>
+                    <option value="css/theme-two.css">Th-2</option>
                 </select>
-                <button class="log-in"><a href="">log in</a></button>
+                <a href="login.html"><button class="log-in">log in</button></a>
             </div>
         </main>
         <div class="serch">
@@ -57,23 +59,7 @@
         </div>
         <div id="searchResults" class="search-results"></div>
         <div style="display: none;" class="center">
-            <h2><span>R</span>OXY <span>H</span>RD</h2>
-            <h1>Unlimited Number <span>of Movies</span>, Tv shows, Cartoons <br> and more.....</h1>
-            <div class="para">
-                <P>90Fps</P>
-                <p>High Quaility</p>
-            </div>
-            <audio loop id="background-music">
-                <source src="background music.mpeg" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>          
-            <a href="#show"><button >Watch Now</button></a>
-        </div>
-        <audio hidden controls>
-            <source src="The Kid LAROI_ Justin Bieber - STAY (Official Video)(MP3_160K).mp3" type="audio/mp3">
-        </audio>
     </header>
-    <div class="show">
         <div class="content">
             <h1><span>R</span>oxy <span>H</span>RD</h1>
             <p>this site contain at best anime around world of comedy, drama, action, horror and advantures, by several qualitys, and 
@@ -278,7 +264,8 @@
             <p class="Thank">Thank you for choosing our site.</p>
         </div>
     </footer>
-   
+    <script src="java-script/theme-select.js"></script>
+    <script src="java-script/menu.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded" , function(){
         const watch = document.getElementById("watch");
@@ -294,17 +281,7 @@
         });
         });
 
-        function menu_op(){
-            document.getElementById('menu').style.display = 'flex'
-            document.getElementById('open').style.display = 'none'
-            document.getElementById('close').style.display = 'inline'
-        };
-        function menu_cl(){
-            document.getElementById('menu').style.display = 'none'
-            document.getElementById('open').style.display = 'inline'
-            document.getElementById('close').style.display = 'none'
-        };
-
+        
         function search_box(){
             document.getElementById('search_box').style.display = 'block'
             document.getElementById('search_mark').style.display = 'none'
@@ -514,17 +491,6 @@
             if (filmindex4 === 1)
             {
                 document.getElementById('D_left3_768').style.display = "none";
-            }
-        }
-         
-        function changetheme(){
-            const replacer = document.getElementById('replacer').value;
-            const style = document.getElementById('style');
-            if (replacer === 'theme2'){
-                style.href = '';
-            }
-            else{
-                style.href = 'HomeThem.css';
             }
         }
 
