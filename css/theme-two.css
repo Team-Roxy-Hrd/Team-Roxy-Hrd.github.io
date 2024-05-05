@@ -145,7 +145,8 @@ footer .copyright .right{
     text-align: center;
     color: white;
     position: absolute;
-    bottom: 100px;
+    bottom: 100px;    
+    display: none;
 }
 footer .copyright .Thank{
     width: 100%;
