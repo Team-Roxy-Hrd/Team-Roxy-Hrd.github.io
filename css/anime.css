@@ -82,6 +82,8 @@ body {
     width: 30%;
     height: 60%;
     padding: 100px 80px;
+    margin-bottom: 140px;
+
 }
 .content h1, .content p, .content h3, .content button{
     color: white;
