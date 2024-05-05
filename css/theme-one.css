@@ -137,7 +137,6 @@ position: absolute;
 footer {
   background-image: url(../pictures/footer_bg.jpg);
     text-align: center;
-    max-height: 100px;
     height: 100%;
     display: flex;
     position: sticky;
