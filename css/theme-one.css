@@ -123,10 +123,16 @@ font-variation-settings:
     background-color: #21c72e;
     border-color: #21c72e;
     font-size: 17px;
-
-
 }
 
+.serch button {
+position: absolute;
+    top: 7px;
+    right: 260px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
 
 footer {
   background-image: url(../pictures/footer_bg.jpg);
