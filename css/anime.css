@@ -82,8 +82,6 @@ body {
     width: 30%;
     height: 60%;
     padding: 100px 80px;
-    margin-bottom: 140px;
-
 }
 .content h1, .content p, .content h3, .content button{
     color: white;
@@ -362,8 +360,6 @@ footer .logo{
     gap: 50px;
     padding: 0 0 10px 0;
     margin: 20px 10%;
-    position: absolute;
-    left: 0;
     border-bottom: 3px solid rgb(109, 205, 109);
 }
 footer .logo i:hover{
@@ -374,14 +370,12 @@ footer .copyright .right{
     width: 100%;
     text-align: center;
     color: white;
-    position: absolute;
     bottom: 100px;
 }
 footer .copyright .Thank{
     width: 100%;
     text-align: center;
     color: white;
-    position: absolute;
     bottom: 70px;
 }
 @media (max-width:480px){
